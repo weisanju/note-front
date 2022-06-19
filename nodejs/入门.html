@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>入门</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title"></li><li class="chapter-item expanded "><a href="../nodejs/index.html"><strong aria-hidden="true">1.</strong> nodejs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/fakeJS.html"><strong aria-hidden="true">1.1.</strong> fakeJS</a></li><li class="chapter-item expanded "><a href="../nodejs/nodejs事件循环.html"><strong aria-hidden="true">1.2.</strong> nodejs事件循环</a></li><li class="chapter-item expanded "><a href="../nodejs/入门.html" class="active"><strong aria-hidden="true">1.3.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../nodejs/包管理.html"><strong aria-hidden="true">1.4.</strong> 包管理</a></li><li class="chapter-item expanded "><a href="../nodejs/定时器.html"><strong aria-hidden="true">1.5.</strong> 定时器</a></li><li class="chapter-item expanded "><a href="../nodejs/异步编程.html"><strong aria-hidden="true">1.6.</strong> 异步编程</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> packageInfo参数解析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/packageInfo参数解析/1.scripts.html"><strong aria-hidden="true">1.7.1.</strong> scripts</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Element-UI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Element-UI/Switch开关.html"><strong aria-hidden="true">2.1.</strong> Switch开关</a></li><li class="chapter-item expanded "><a href="../Element-UI/Tree树形控件.html"><strong aria-hidden="true">2.2.</strong> Tree树形控件</a></li><li class="chapter-item expanded "><a href="../Element-UI/backtop.html"><strong aria-hidden="true">2.3.</strong> backtop</a></li><li class="chapter-item expanded "><a href="../Element-UI/card卡片.html"><strong aria-hidden="true">2.4.</strong> card卡片</a></li><li class="chapter-item expanded "><a href="../Element-UI/form表单.html"><strong aria-hidden="true">2.5.</strong> form表单</a></li><li class="chapter-item expanded "><a href="../Element-UI/image图片.html"><strong aria-hidden="true">2.6.</strong> image图片</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-Breadcrumb面包屑.html"><strong aria-hidden="true">2.7.</strong> navigation-Breadcrumb面包屑</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-dropdown.html"><strong aria-hidden="true">2.8.</strong> navigation-dropdown</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-navmenu.html"><strong aria-hidden="true">2.9.</strong> navigation-navmenu</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-steps.html"><strong aria-hidden="true">2.10.</strong> navigation-steps</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-标签页.html"><strong aria-hidden="true">2.11.</strong> navigation-标签页</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-页头.html"><strong aria-hidden="true">2.12.</strong> navigation-页头</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-Notification.html"><strong aria-hidden="true">2.13.</strong> notice-Notification</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-alert.html"><strong aria-hidden="true">2.14.</strong> notice-alert</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-loading.html"><strong aria-hidden="true">2.15.</strong> notice-loading</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message-box.html"><strong aria-hidden="true">2.16.</strong> notice-message-box</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message提示.html"><strong aria-hidden="true">2.17.</strong> notice-message提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/popConfirm.html"><strong aria-hidden="true">2.18.</strong> popConfirm</a></li><li class="chapter-item expanded "><a href="../Element-UI/popOver弹出框.html"><strong aria-hidden="true">2.19.</strong> popOver弹出框</a></li><li class="chapter-item expanded "><a href="../Element-UI/slider滑块.html"><strong aria-hidden="true">2.20.</strong> slider滑块</a></li><li class="chapter-item expanded "><a href="../Element-UI/timeline.html"><strong aria-hidden="true">2.21.</strong> timeline</a></li><li class="chapter-item expanded "><a href="../Element-UI/tooltip.html"><strong aria-hidden="true">2.22.</strong> tooltip</a></li><li class="chapter-item expanded "><a href="../Element-UI/transfer穿梭框.html"><strong aria-hidden="true">2.23.</strong> transfer穿梭框</a></li><li class="chapter-item expanded "><a href="../Element-UI/上传.html"><strong aria-hidden="true">2.24.</strong> 上传</a></li><li class="chapter-item expanded "><a href="../Element-UI/入门.html"><strong aria-hidden="true">2.25.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../Element-UI/分割线.html"><strong aria-hidden="true">2.26.</strong> 分割线</a></li><li class="chapter-item expanded "><a href="../Element-UI/分页.html"><strong aria-hidden="true">2.27.</strong> 分页</a></li><li class="chapter-item expanded "><a href="../Element-UI/基础组件.html"><strong aria-hidden="true">2.28.</strong> 基础组件</a></li><li class="chapter-item expanded "><a href="../Element-UI/头像.html"><strong aria-hidden="true">2.29.</strong> 头像</a></li><li class="chapter-item expanded "><a href="../Element-UI/对话框.html"><strong aria-hidden="true">2.30.</strong> 对话框</a></li><li class="chapter-item expanded "><a href="../Element-UI/常见input输入.html"><strong aria-hidden="true">2.31.</strong> 常见input输入</a></li><li class="chapter-item expanded "><a href="../Element-UI/折叠面板.html"><strong aria-hidden="true">2.32.</strong> 折叠面板</a></li><li class="chapter-item expanded "><a href="../Element-UI/抽屉.html"><strong aria-hidden="true">2.33.</strong> 抽屉</a></li><li class="chapter-item expanded "><a href="../Element-UI/无限滚动.html"><strong aria-hidden="true">2.34.</strong> 无限滚动</a></li><li class="chapter-item expanded "><a href="../Element-UI/日历.html"><strong aria-hidden="true">2.35.</strong> 日历</a></li><li class="chapter-item expanded "><a href="../Element-UI/时间日期选择.html"><strong aria-hidden="true">2.36.</strong> 时间日期选择</a></li><li class="chapter-item expanded "><a href="../Element-UI/标签.html"><strong aria-hidden="true">2.37.</strong> 标签</a></li><li class="chapter-item expanded "><a href="../Element-UI/标记与提示.html"><strong aria-hidden="true">2.38.</strong> 标记与提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/级联选择器.html"><strong aria-hidden="true">2.39.</strong> 级联选择器</a></li><li class="chapter-item expanded "><a href="../Element-UI/表格.html"><strong aria-hidden="true">2.40.</strong> 表格</a></li><li class="chapter-item expanded "><a href="../Element-UI/评分.html"><strong aria-hidden="true">2.41.</strong> 评分</a></li><li class="chapter-item expanded "><a href="../Element-UI/走马灯.html"><strong aria-hidden="true">2.42.</strong> 走马灯</a></li><li class="chapter-item expanded "><a href="../Element-UI/进度条.html"><strong aria-hidden="true">2.43.</strong> 进度条</a></li><li class="chapter-item expanded "><a href="../Element-UI/颜色选择器.html"><strong aria-hidden="true">2.44.</strong> 颜色选择器</a></li></ol></li><li class="chapter-item expanded "><a href="../Html5/index.html"><strong aria-hidden="true">3.</strong> Html5</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Html5/CSS3.html"><strong aria-hidden="true">3.1.</strong> CSS3</a></li><li class="chapter-item expanded "><a href="../Html5/H5canvas图形绘制.html"><strong aria-hidden="true">3.2.</strong> H5canvas图形绘制</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5.html"><strong aria-hidden="true">3.3.</strong> HTML5</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5的结构.html"><strong aria-hidden="true">3.4.</strong> HTML5的结构</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5表单.html"><strong aria-hidden="true">3.5.</strong> HTML5表单</a></li><li class="chapter-item expanded "><a href="../Html5/WebWorkers.html"><strong aria-hidden="true">3.6.</strong> WebWorkers</a></li><li class="chapter-item expanded "><a href="../Html5/多媒体播放.html"><strong aria-hidden="true">3.7.</strong> 多媒体播放</a></li><li class="chapter-item expanded "><a href="../Html5/本地存储.html"><strong aria-hidden="true">3.8.</strong> 本地存储</a></li><li class="chapter-item expanded "><a href="../Html5/离线应用程序.html"><strong aria-hidden="true">3.9.</strong> 离线应用程序</a></li><li class="chapter-item expanded "><a href="../Html5/获取地址位置信息.html"><strong aria-hidden="true">3.10.</strong> 获取地址位置信息</a></li><li class="chapter-item expanded "><a href="../Html5/通信API.html"><strong aria-hidden="true">3.11.</strong> 通信API</a></li></ol></li><li class="chapter-item expanded "><a href="../css/index.html"><strong aria-hidden="true">4.</strong> css</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/BFC.html"><strong aria-hidden="true">4.1.</strong> BFC</a></li><li class="chapter-item expanded "><a href="../css/CSS选择器.html"><strong aria-hidden="true">4.2.</strong> CSS选择器</a></li><li class="chapter-item expanded "><a href="../css/内联元素垂直居中的方式.html"><strong aria-hidden="true">4.3.</strong> 内联元素垂直居中的方式</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化.html"><strong aria-hidden="true">4.4.</strong> 基本视觉格式化</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化-1.html"><strong aria-hidden="true">4.5.</strong> 基本视觉格式化-1</a></li><li class="chapter-item expanded "><a href="../css/弹性布局.html"><strong aria-hidden="true">4.6.</strong> 弹性布局</a></li><li class="chapter-item expanded "><a href="../css/结构与层叠.html"><strong aria-hidden="true">4.7.</strong> 结构与层叠</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> CSS布局方式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS布局方式/flex布局.html"><strong aria-hidden="true">4.8.1.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS布局方式/两栏布局.html"><strong aria-hidden="true">4.8.2.</strong> 两栏布局</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.9.</strong> CSS样式详解</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS样式详解/Grid布局.html"><strong aria-hidden="true">4.9.1.</strong> Grid布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/flex布局.html"><strong aria-hidden="true">4.9.2.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/定位.html"><strong aria-hidden="true">4.9.3.</strong> 定位</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../vue/index.html"><strong aria-hidden="true">5.</strong> vue</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vue/class与style的绑定.html"><strong aria-hidden="true">5.1.</strong> class与style的绑定</a></li><li class="chapter-item expanded "><a href="../vue/事件处理.html"><strong aria-hidden="true">5.2.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../vue/列表渲染.html"><strong aria-hidden="true">5.3.</strong> 列表渲染</a></li><li class="chapter-item expanded "><a href="../vue/条件渲染.html"><strong aria-hidden="true">5.4.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../vue/模板语法.html"><strong aria-hidden="true">5.5.</strong> 模板语法</a></li><li class="chapter-item expanded "><a href="../vue/组件.html"><strong aria-hidden="true">5.6.</strong> 组件</a></li><li class="chapter-item expanded "><a href="../vue/表单输入绑定.html"><strong aria-hidden="true">5.7.</strong> 表单输入绑定</a></li><li class="chapter-item expanded "><a href="../vue/计算属性和侦听器.html"><strong aria-hidden="true">5.8.</strong> 计算属性和侦听器</a></li></ol></li><li class="chapter-item expanded "><a href="../quasar/index.html"><strong aria-hidden="true">6.</strong> quasar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/quasarCli.html"><strong aria-hidden="true">6.1.</strong> quasarCli</a></li><li class="chapter-item expanded "><a href="../quasar/quasar选项和辅助.html"><strong aria-hidden="true">6.2.</strong> quasar选项和辅助</a></li><li class="chapter-item expanded "><a href="../quasar/vue组件.html"><strong aria-hidden="true">6.3.</strong> vue组件</a></li><li class="chapter-item expanded "><a href="../quasar/布局.html"><strong aria-hidden="true">6.4.</strong> 布局</a></li><li class="chapter-item expanded "><a href="../quasar/网格布局.html"><strong aria-hidden="true">6.5.</strong> 网格布局</a></li><li class="chapter-item expanded "><a href="../quasar/风格和特性.html"><strong aria-hidden="true">6.6.</strong> 风格和特性</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.7.</strong> 组件</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/组件/q-dialog.html"><strong aria-hidden="true">6.7.1.</strong> q-dialog</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-expansion-item.html"><strong aria-hidden="true">6.7.2.</strong> q-expansion-item</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-page-sticky.html"><strong aria-hidden="true">6.7.3.</strong> q-page-sticky</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-tabs.html"><strong aria-hidden="true">6.7.4.</strong> q-tabs</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-toolbar.html"><strong aria-hidden="true">6.7.5.</strong> q-toolbar</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> HTTP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../HTTP/Content-Disposition.html"><strong aria-hidden="true">7.1.</strong> Content-Disposition</a></li><li class="chapter-item expanded "><a href="../HTTP/Cookie.html"><strong aria-hidden="true">7.2.</strong> Cookie</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP缓存.html"><strong aria-hidden="true">7.3.</strong> HTTP缓存</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP访问控制.html"><strong aria-hidden="true">7.4.</strong> HTTP访问控制</a></li><li class="chapter-item expanded "><a href="../HTTP/Http响应码.html"><strong aria-hidden="true">7.5.</strong> Http响应码</a></li><li class="chapter-item expanded "><a href="../HTTP/MIME.html"><strong aria-hidden="true">7.6.</strong> MIME</a></li><li class="chapter-item expanded "><a href="../HTTP/http头.html"><strong aria-hidden="true">7.7.</strong> http头</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> ECMAScript</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECMAScript/ECMAScript6简介.html"><strong aria-hidden="true">8.1.</strong> ECMAScript6简介</a></li><li class="chapter-item expanded "><a href="../ECMAScript/Set-Map数据结构.html"><strong aria-hidden="true">8.2.</strong> Set-Map数据结构</a></li><li class="chapter-item expanded "><a href="../ECMAScript/async函数.html"><strong aria-hidden="true">8.3.</strong> async函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/generate函数.html"><strong aria-hidden="true">8.4.</strong> generate函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/let与const命令.html"><strong aria-hidden="true">8.5.</strong> let与const命令</a></li><li class="chapter-item expanded "><a href="../ECMAScript/proxy.html"><strong aria-hidden="true">8.6.</strong> proxy</a></li><li class="chapter-item expanded "><a href="../ECMAScript/symbol.html"><strong aria-hidden="true">8.7.</strong> symbol</a></li><li class="chapter-item expanded "><a href="../ECMAScript/函数.html"><strong aria-hidden="true">8.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/字符串-正则-数值.html"><strong aria-hidden="true">8.9.</strong> 字符串-正则-数值</a></li><li class="chapter-item expanded "><a href="../ECMAScript/对象.html"><strong aria-hidden="true">8.10.</strong> 对象</a></li><li class="chapter-item expanded "><a href="../ECMAScript/数组.html"><strong aria-hidden="true">8.11.</strong> 数组</a></li></ol></li><li class="chapter-item expanded "><a href="../reactor/index.html"><strong aria-hidden="true">9.</strong> reactor</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/1.搭建TS-Reactor环境.html"><strong aria-hidden="true">9.1.</strong> 搭建TS-Reactor环境</a></li><li class="chapter-item expanded "><a href="../reactor/2.jsx.html"><strong aria-hidden="true">9.2.</strong> jsx</a></li><li class="chapter-item expanded "><a href="../reactor/3.元素渲染.html"><strong aria-hidden="true">9.3.</strong> 元素渲染</a></li><li class="chapter-item expanded "><a href="../reactor/4.组件与模块&Props.html"><strong aria-hidden="true">9.4.</strong> 组件与模块&Props</a></li><li class="chapter-item expanded "><a href="../reactor/5.State生命周期.html"><strong aria-hidden="true">9.5.</strong> State生命周期</a></li><li class="chapter-item expanded "><a href="../reactor/6.事件处理.html"><strong aria-hidden="true">9.6.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../reactor/7.条件渲染.html"><strong aria-hidden="true">9.7.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../reactor/8.列表.html"><strong aria-hidden="true">9.8.</strong> 列表</a></li><li class="chapter-item expanded "><a href="../reactor/9.表单.html"><strong aria-hidden="true">9.9.</strong> 表单</a></li><li class="chapter-item expanded "><a href="../reactor/10.组合与继承.html"><strong aria-hidden="true">9.10.</strong> 组合与继承</a></li><li class="chapter-item expanded "><a href="../reactor/11.React最佳实践.html"><strong aria-hidden="true">9.11.</strong> React最佳实践</a></li><li class="chapter-item expanded "><a href="../reactor/高级特性/index.html"><strong aria-hidden="true">9.12.</strong> 高级特性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/高级特性/Refs转发.html"><strong aria-hidden="true">9.12.1.</strong> Refs转发</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="从命令行运行nodejs"><a class="header" href="#从命令行运行nodejs">从命令行运行Nodejs</a></h2>
+<pre><code class="language-shell">node app.js
+</code></pre>
+<h2 id="nodejs-程序退出"><a class="header" href="#nodejs-程序退出">Node.js 程序退出</a></h2>
+<blockquote>
+<p>注意：<code>process</code> 不需要 &quot;require&quot;，它是自动可用的。</p>
+</blockquote>
+<p><strong>强制退出</strong></p>
+<pre><code class="language-js">process.exit(1)
+</code></pre>
+<p><strong>设定错误码</strong></p>
+<p>当程序结束时，Node.js 会返回该退出码。</p>
+<pre><code>
+process.exitCode = 1
+</code></pre>
+<p><strong>信号终止</strong></p>
+<pre><code class="language-js">const express = require('express')
+const app = express()
+app.get('/', (req, res) =&gt; {  res.send('你好')})
+const server = app.listen(3000, () =&gt; console.log('服务器已就绪'))
+# 监听TERM信号
+process.on('SIGTERM', () =&gt; {  server.close(() =&gt; {    console.log('进程已终止')  })})
+
+# 发送中断信号
+process.kill(process.pid, 'SIGTERM')
+</code></pre>
+<h2 id="读取环境变量"><a class="header" href="#读取环境变量">读取环境变量</a></h2>
+<blockquote>
+<p>注意：<code>process</code> 不需要 &quot;require&quot;，它是自动可用的。</p>
+</blockquote>
+<p>Node.js 的 <code>process</code> 核心模块提供了 <code>env</code> 属性，该属性承载了在启动进程时设置的所有环境变量。</p>
+<pre><code class="language-js">process.env.NODE_ENV // &quot;development&quot;
+</code></pre>
+<h2 id="nodejs-repl"><a class="header" href="#nodejs-repl">Node.js REPL</a></h2>
+<p><em>REPL 也被称为运行评估打印循环，是一种编程语言环境（主要是控制台窗口），它使用单个表达式作为用户输入，并在执行后将结果返回到控制台。</em></p>
+<h3 id="使用-tab-键自动补全"><a class="header" href="#使用-tab-键自动补全">使用 tab 键自动补全</a></h3>
+<h3 id="探索-javascript-对象"><a class="header" href="#探索-javascript-对象">探索 JavaScript 对象</a></h3>
+<p>尝试输入 JavaScript 类的名称，例如 <code>Number</code>，添加一个点号并按下 <code>tab</code>。</p>
+<p>REPL 会打印可以在该类上访问的所有属性和方法</p>
+<h3 id="探索全局对象"><a class="header" href="#探索全局对象">探索全局对象</a></h3>
+<p>通过输入 <code>global.</code> 并按下 <code>tab</code>，可以检查可以访问的全局变量</p>
+<h3 id="_-特殊变量"><a class="header" href="#_-特殊变量">_ 特殊变量</a></h3>
+<p>如果在某些代码之后输入 <code>_</code>，则会打印最后一次操作的结果。</p>
+<h3 id="点命令"><a class="header" href="#点命令">点命令</a></h3>
+<p>一些特殊的命令，所有这些命令都以点号 <code>.</code> 开头。它们是：</p>
+<ul>
+<li><code>.help</code>: 显示点命令的帮助。</li>
+<li><code>.editor</code>: 启用编辑器模式，可以轻松地编写多行 JavaScript 代码。当处于此模式时，按下 ctrl-D 可以运行编写的代码。</li>
+<li><code>.break</code>: 当输入多行的表达式时，输入 <code>.break</code> 命令可以中止进一步的输入。相当于按下 ctrl-C。</li>
+<li><code>.clear</code>: 将 REPL 上下文重置为空对象，并清除当前正在输入的任何多行的表达式。</li>
+<li><code>.load</code>: 加载 JavaScript 文件（相对于当前工作目录）。</li>
+<li><code>.save</code>: 将在 REPL 会话中输入的所有内容保存到文件（需指定文件名）。</li>
+<li><code>.exit</code>: 退出 REPL（相当于按下两次 ctrl-C）。</li>
+</ul>
+<h3 id="从命令行接收参数"><a class="header" href="#从命令行接收参数">从命令行接收参数</a></h3>
+<pre><code class="language-bash">node app.js name=joe
+node app.js joe
+</code></pre>
+<pre><code class="language-js">process.argv.forEach((val, index) =&gt; {
+  console.log(`${index}: ${val}`)
+})
+const args = process.argv.slice(2)
+
+</code></pre>
+<p>使用 <a href="https://www.npmjs.com/package/minimist"><code>minimist</code></a> 库，该库有助于处理参数：</p>
+<pre><code class="language-js">const args = require('minimist')(process.argv.slice(2))
+args['name'] //joe
+</code></pre>
+<pre><code class="language-bash">node app.js --name=joe
+</code></pre>
+<h2 id="输出到命令行"><a class="header" href="#输出到命令行">输出到命令行</a></h2>
+<h3 id="使用控制台模块的基础输出"><a class="header" href="#使用控制台模块的基础输出">使用控制台模块的基础输出</a></h3>
+<p>Node.js 提供了 <a href="http://nodejs.cn/api/console.html"><code>console</code> 模块</a>，该模块提供了大量非常有用的与命令行交互的方法。</p>
+<pre><code class="language-js">const x = 'x'
+const y = 'y'
+console.log(x, y)
+</code></pre>
+<h3 id="格式化输出"><a class="header" href="#格式化输出">格式化输出</a></h3>
+<pre><code class="language-js">console.log('我的%s已经%d岁', '猫', 2)
+</code></pre>
+<ul>
+<li><code>%s</code> 会格式化变量为字符串</li>
+<li><code>%d</code> 会格式化变量为数字</li>
+<li><code>%i</code> 会格式化变量为其整数部分</li>
+<li><code>%o</code> 会格式化变量为对象</li>
+</ul>
+<pre><code class="language-js">console.log('%o', Number)
+</code></pre>
+<h3 id="清除控制台"><a class="header" href="#清除控制台">清除控制台</a></h3>
+<p><code>console.clear()</code> 会清除控制台（其行为可能取决于所使用的控制台）。</p>
+<h3 id="统计打印字符串次数"><a class="header" href="#统计打印字符串次数">统计打印字符串次数</a></h3>
+<p><code>console.count()</code> 是一个便利的方法。</p>
+<p>count 方法会对打印的字符串的次数进行计数，并在其旁边打印计数：</p>
+<h3 id="打印堆栈踪迹"><a class="header" href="#打印堆栈踪迹">打印堆栈踪迹</a></h3>
+<p>在某些情况下，打印函数的调用堆栈踪迹很有用</p>
+<pre><code class="language-js">const function2 = () =&gt; console.trace()
+const function1 = () =&gt; function2()
+function1()
+</code></pre>
+<h3 id="计算耗时"><a class="header" href="#计算耗时">计算耗时</a></h3>
+<pre><code class="language-js">const doSomething = () =&gt; console.log('测试')
+const measureDoingSomething = () =&gt; {
+  console.time('doSomething()')
+  //做点事，并测量所需的时间。
+  doSomething()
+  console.timeEnd('doSomething()')
+}
+measureDoingSomething()
+</code></pre>
+<h3 id="stdout-和-stderr"><a class="header" href="#stdout-和-stderr">stdout 和 stderr</a></h3>
+<p>console.log 非常适合在控制台中打印消息。 这就是所谓的标准输出（或称为 <code>stdout</code>）。</p>
+<p><code>console.error</code> 会打印到 <code>stderr</code> 流。</p>
+<p>它不会出现在控制台中，但是会出现在错误日志中。</p>
+<h3 id="为输出着色"><a class="header" href="#为输出着色">为输出着色</a></h3>
+<p>可以使用<a href="https://gist.github.com/iamnewton/8754917">转义序列</a>在控制台中为文本的输出着色。 转义序列是一组标识颜色的字符。</p>
+<pre><code class="language-js">console.log('\x1b[33m%s\x1b[0m', '你好')
+</code></pre>
+<p>当然，这是执行此操作的底层方法。 为控制台输出着色的最简单方法是使用库。 <a href="https://github.com/chalk/chalk">Chalk</a> 是一个这样的库，除了为其着色外，它还有助于其他样式的设置（例如使文本变为粗体、斜体或带下划线）。</p>
+<p>可以使用 <code>npm install chalk</code> 进行安装，然后就可以使用它：</p>
+<pre><code class="language-js">const chalk = require('chalk')
+console.log(chalk.yellow('你好'))
+</code></pre>
+<p>与尝试记住转义代码相比，使用 <code>chalk.yellow</code> 方便得多，并且代码更具可读性。</p>
+<h3 id="创建进度条"><a class="header" href="#创建进度条">创建进度条</a></h3>
+<p><a href="https://www.npmjs.com/package/progress">Progress</a> 是一个很棒的软件包，可在控制台中创建进度条。 使用 <code>npm install progress</code> 进行安装。.</p>
+<p>以下代码段会创建一个 10 步的进度条，每 100 毫秒完成一步。 当进度条结束时，则清除定时器：</p>
+<pre><code class="language-.js">ProgressBar = require('progress')
+let progress = new ProgressBar('aaa', 100);
+
+let a = setInterval(() =&gt; {
+    progress.tick();
+    console.log(1)
+    if (progress.complete) {
+        clearInterval(a)
+        console.log('end')
+    }
+}, 100);
+</code></pre>
+<h2 id="从命令行接收输入"><a class="header" href="#从命令行接收输入">从命令行接收输入</a></h2>
+<pre><code class="language-js">const readline = require('readline').createInterface({  input: process.stdin,  output: process.stdout})
+readline.question(`你叫什么名字?`, name =&gt; {  console.log(`你好 ${name}!`)  readline.close()})
+</code></pre>
+<pre><code class="language-js">const inquirer = require('inquirer')
+var questions = [  {    type: 'input',    name: 'name',    message: &quot;你叫什么名字?&quot;  }]
+inquirer.prompt(questions).then(answers =&gt; {  console.log(`你好 ${answers['name']}!`)})
+</code></pre>
+<h2 id="使用-exports-从-nodejs-文件中公开功能"><a class="header" href="#使用-exports-从-nodejs-文件中公开功能">使用 exports 从 Node.js 文件中公开功能</a></h2>
+<p>Node.js 具有内置的模块系统。</p>
+<p>Node.js 文件可以导入其他 Node.js 文件公开的功能。</p>
+<p>当想要导入某些东西时，使用</p>
+<pre><code class="language-js">const library = require('./library')
+</code></pre>
+<p>可以导入存在于当前文件夹中的 <code>library.js</code> 文件中公开的功能。</p>
+<p>在此文件中，必须先公开功能，然后其他文件才能将其导入。</p>
+<p>默认情况下，文件中定义的任何其他对象或变量都是私有的，不会公开给外界。</p>
+<p>这就是 <a href="http://nodejs.cn/api/modules.html"><code>module</code> 系统</a>提供的 <code>module.exports</code> API 可以做的事。</p>
+<p>当将对象或函数赋值为新的 <code>exports</code> 属性时，这就是要被公开的内容，因此，可以将其导入应用程序的其他部分或其他应用程序中。</p>
+<p>可以通过两种方式进行操作。</p>
+<ul>
+<li>
+<p>第一种方式是将对象赋值给 <code>module.exports</code>（这是模块系统提供的对象），这会使文件只导出该对象：</p>
+<pre><code class="language-js">const car = {  brand: 'Ford',  model: 'Fiesta'}
+module.exports = car
+//在另一个文件中
+const car = require('./car')
+</code></pre>
+</li>
+<li>
+<p>第二种方式是将要导出的对象添加为 <code>exports</code> 的属性。这种方式可以导出多个对象、函数或数据：</p>
+<pre><code class="language-js">const car = {
+  brand: 'Ford',
+  model: 'Fiesta'
+}
+
+exports.car = car
+
+# 或直接
+exports.car = {
+  brand: 'Ford',
+  model: 'Fiesta'
+}
+</code></pre>
+<p>在另一个文件中，则通过引用导入的属性来使用它：</p>
+<pre><code class="language-js">const items = require('./items')
+items.car
+</code></pre>
+<pre><code>const car = require('./items').car
+</code></pre>
+<p><code>module.exports</code> 和 <code>export</code> 之间有什么区别？</p>
+<p>前者公开了它指向的对象。 后者公开了它指向的对象的属性。</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../nodejs/nodejs事件循环.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../nodejs/包管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../nodejs/nodejs事件循环.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../nodejs/包管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Cookie</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title"></li><li class="chapter-item expanded "><a href="../nodejs/index.html"><strong aria-hidden="true">1.</strong> nodejs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/fakeJS.html"><strong aria-hidden="true">1.1.</strong> fakeJS</a></li><li class="chapter-item expanded "><a href="../nodejs/nodejs事件循环.html"><strong aria-hidden="true">1.2.</strong> nodejs事件循环</a></li><li class="chapter-item expanded "><a href="../nodejs/入门.html"><strong aria-hidden="true">1.3.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../nodejs/包管理.html"><strong aria-hidden="true">1.4.</strong> 包管理</a></li><li class="chapter-item expanded "><a href="../nodejs/定时器.html"><strong aria-hidden="true">1.5.</strong> 定时器</a></li><li class="chapter-item expanded "><a href="../nodejs/异步编程.html"><strong aria-hidden="true">1.6.</strong> 异步编程</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> packageInfo参数解析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/packageInfo参数解析/1.scripts.html"><strong aria-hidden="true">1.7.1.</strong> scripts</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Element-UI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Element-UI/Switch开关.html"><strong aria-hidden="true">2.1.</strong> Switch开关</a></li><li class="chapter-item expanded "><a href="../Element-UI/Tree树形控件.html"><strong aria-hidden="true">2.2.</strong> Tree树形控件</a></li><li class="chapter-item expanded "><a href="../Element-UI/backtop.html"><strong aria-hidden="true">2.3.</strong> backtop</a></li><li class="chapter-item expanded "><a href="../Element-UI/card卡片.html"><strong aria-hidden="true">2.4.</strong> card卡片</a></li><li class="chapter-item expanded "><a href="../Element-UI/form表单.html"><strong aria-hidden="true">2.5.</strong> form表单</a></li><li class="chapter-item expanded "><a href="../Element-UI/image图片.html"><strong aria-hidden="true">2.6.</strong> image图片</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-Breadcrumb面包屑.html"><strong aria-hidden="true">2.7.</strong> navigation-Breadcrumb面包屑</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-dropdown.html"><strong aria-hidden="true">2.8.</strong> navigation-dropdown</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-navmenu.html"><strong aria-hidden="true">2.9.</strong> navigation-navmenu</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-steps.html"><strong aria-hidden="true">2.10.</strong> navigation-steps</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-标签页.html"><strong aria-hidden="true">2.11.</strong> navigation-标签页</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-页头.html"><strong aria-hidden="true">2.12.</strong> navigation-页头</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-Notification.html"><strong aria-hidden="true">2.13.</strong> notice-Notification</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-alert.html"><strong aria-hidden="true">2.14.</strong> notice-alert</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-loading.html"><strong aria-hidden="true">2.15.</strong> notice-loading</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message-box.html"><strong aria-hidden="true">2.16.</strong> notice-message-box</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message提示.html"><strong aria-hidden="true">2.17.</strong> notice-message提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/popConfirm.html"><strong aria-hidden="true">2.18.</strong> popConfirm</a></li><li class="chapter-item expanded "><a href="../Element-UI/popOver弹出框.html"><strong aria-hidden="true">2.19.</strong> popOver弹出框</a></li><li class="chapter-item expanded "><a href="../Element-UI/slider滑块.html"><strong aria-hidden="true">2.20.</strong> slider滑块</a></li><li class="chapter-item expanded "><a href="../Element-UI/timeline.html"><strong aria-hidden="true">2.21.</strong> timeline</a></li><li class="chapter-item expanded "><a href="../Element-UI/tooltip.html"><strong aria-hidden="true">2.22.</strong> tooltip</a></li><li class="chapter-item expanded "><a href="../Element-UI/transfer穿梭框.html"><strong aria-hidden="true">2.23.</strong> transfer穿梭框</a></li><li class="chapter-item expanded "><a href="../Element-UI/上传.html"><strong aria-hidden="true">2.24.</strong> 上传</a></li><li class="chapter-item expanded "><a href="../Element-UI/入门.html"><strong aria-hidden="true">2.25.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../Element-UI/分割线.html"><strong aria-hidden="true">2.26.</strong> 分割线</a></li><li class="chapter-item expanded "><a href="../Element-UI/分页.html"><strong aria-hidden="true">2.27.</strong> 分页</a></li><li class="chapter-item expanded "><a href="../Element-UI/基础组件.html"><strong aria-hidden="true">2.28.</strong> 基础组件</a></li><li class="chapter-item expanded "><a href="../Element-UI/头像.html"><strong aria-hidden="true">2.29.</strong> 头像</a></li><li class="chapter-item expanded "><a href="../Element-UI/对话框.html"><strong aria-hidden="true">2.30.</strong> 对话框</a></li><li class="chapter-item expanded "><a href="../Element-UI/常见input输入.html"><strong aria-hidden="true">2.31.</strong> 常见input输入</a></li><li class="chapter-item expanded "><a href="../Element-UI/折叠面板.html"><strong aria-hidden="true">2.32.</strong> 折叠面板</a></li><li class="chapter-item expanded "><a href="../Element-UI/抽屉.html"><strong aria-hidden="true">2.33.</strong> 抽屉</a></li><li class="chapter-item expanded "><a href="../Element-UI/无限滚动.html"><strong aria-hidden="true">2.34.</strong> 无限滚动</a></li><li class="chapter-item expanded "><a href="../Element-UI/日历.html"><strong aria-hidden="true">2.35.</strong> 日历</a></li><li class="chapter-item expanded "><a href="../Element-UI/时间日期选择.html"><strong aria-hidden="true">2.36.</strong> 时间日期选择</a></li><li class="chapter-item expanded "><a href="../Element-UI/标签.html"><strong aria-hidden="true">2.37.</strong> 标签</a></li><li class="chapter-item expanded "><a href="../Element-UI/标记与提示.html"><strong aria-hidden="true">2.38.</strong> 标记与提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/级联选择器.html"><strong aria-hidden="true">2.39.</strong> 级联选择器</a></li><li class="chapter-item expanded "><a href="../Element-UI/表格.html"><strong aria-hidden="true">2.40.</strong> 表格</a></li><li class="chapter-item expanded "><a href="../Element-UI/评分.html"><strong aria-hidden="true">2.41.</strong> 评分</a></li><li class="chapter-item expanded "><a href="../Element-UI/走马灯.html"><strong aria-hidden="true">2.42.</strong> 走马灯</a></li><li class="chapter-item expanded "><a href="../Element-UI/进度条.html"><strong aria-hidden="true">2.43.</strong> 进度条</a></li><li class="chapter-item expanded "><a href="../Element-UI/颜色选择器.html"><strong aria-hidden="true">2.44.</strong> 颜色选择器</a></li></ol></li><li class="chapter-item expanded "><a href="../Html5/index.html"><strong aria-hidden="true">3.</strong> Html5</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Html5/CSS3.html"><strong aria-hidden="true">3.1.</strong> CSS3</a></li><li class="chapter-item expanded "><a href="../Html5/H5canvas图形绘制.html"><strong aria-hidden="true">3.2.</strong> H5canvas图形绘制</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5.html"><strong aria-hidden="true">3.3.</strong> HTML5</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5的结构.html"><strong aria-hidden="true">3.4.</strong> HTML5的结构</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5表单.html"><strong aria-hidden="true">3.5.</strong> HTML5表单</a></li><li class="chapter-item expanded "><a href="../Html5/WebWorkers.html"><strong aria-hidden="true">3.6.</strong> WebWorkers</a></li><li class="chapter-item expanded "><a href="../Html5/多媒体播放.html"><strong aria-hidden="true">3.7.</strong> 多媒体播放</a></li><li class="chapter-item expanded "><a href="../Html5/本地存储.html"><strong aria-hidden="true">3.8.</strong> 本地存储</a></li><li class="chapter-item expanded "><a href="../Html5/离线应用程序.html"><strong aria-hidden="true">3.9.</strong> 离线应用程序</a></li><li class="chapter-item expanded "><a href="../Html5/获取地址位置信息.html"><strong aria-hidden="true">3.10.</strong> 获取地址位置信息</a></li><li class="chapter-item expanded "><a href="../Html5/通信API.html"><strong aria-hidden="true">3.11.</strong> 通信API</a></li></ol></li><li class="chapter-item expanded "><a href="../css/index.html"><strong aria-hidden="true">4.</strong> css</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/BFC.html"><strong aria-hidden="true">4.1.</strong> BFC</a></li><li class="chapter-item expanded "><a href="../css/CSS选择器.html"><strong aria-hidden="true">4.2.</strong> CSS选择器</a></li><li class="chapter-item expanded "><a href="../css/内联元素垂直居中的方式.html"><strong aria-hidden="true">4.3.</strong> 内联元素垂直居中的方式</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化.html"><strong aria-hidden="true">4.4.</strong> 基本视觉格式化</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化-1.html"><strong aria-hidden="true">4.5.</strong> 基本视觉格式化-1</a></li><li class="chapter-item expanded "><a href="../css/弹性布局.html"><strong aria-hidden="true">4.6.</strong> 弹性布局</a></li><li class="chapter-item expanded "><a href="../css/结构与层叠.html"><strong aria-hidden="true">4.7.</strong> 结构与层叠</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> CSS布局方式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS布局方式/flex布局.html"><strong aria-hidden="true">4.8.1.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS布局方式/两栏布局.html"><strong aria-hidden="true">4.8.2.</strong> 两栏布局</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.9.</strong> CSS样式详解</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS样式详解/Grid布局.html"><strong aria-hidden="true">4.9.1.</strong> Grid布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/flex布局.html"><strong aria-hidden="true">4.9.2.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/定位.html"><strong aria-hidden="true">4.9.3.</strong> 定位</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../vue/index.html"><strong aria-hidden="true">5.</strong> vue</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vue/class与style的绑定.html"><strong aria-hidden="true">5.1.</strong> class与style的绑定</a></li><li class="chapter-item expanded "><a href="../vue/事件处理.html"><strong aria-hidden="true">5.2.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../vue/列表渲染.html"><strong aria-hidden="true">5.3.</strong> 列表渲染</a></li><li class="chapter-item expanded "><a href="../vue/条件渲染.html"><strong aria-hidden="true">5.4.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../vue/模板语法.html"><strong aria-hidden="true">5.5.</strong> 模板语法</a></li><li class="chapter-item expanded "><a href="../vue/组件.html"><strong aria-hidden="true">5.6.</strong> 组件</a></li><li class="chapter-item expanded "><a href="../vue/表单输入绑定.html"><strong aria-hidden="true">5.7.</strong> 表单输入绑定</a></li><li class="chapter-item expanded "><a href="../vue/计算属性和侦听器.html"><strong aria-hidden="true">5.8.</strong> 计算属性和侦听器</a></li></ol></li><li class="chapter-item expanded "><a href="../quasar/index.html"><strong aria-hidden="true">6.</strong> quasar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/quasarCli.html"><strong aria-hidden="true">6.1.</strong> quasarCli</a></li><li class="chapter-item expanded "><a href="../quasar/quasar选项和辅助.html"><strong aria-hidden="true">6.2.</strong> quasar选项和辅助</a></li><li class="chapter-item expanded "><a href="../quasar/vue组件.html"><strong aria-hidden="true">6.3.</strong> vue组件</a></li><li class="chapter-item expanded "><a href="../quasar/布局.html"><strong aria-hidden="true">6.4.</strong> 布局</a></li><li class="chapter-item expanded "><a href="../quasar/网格布局.html"><strong aria-hidden="true">6.5.</strong> 网格布局</a></li><li class="chapter-item expanded "><a href="../quasar/风格和特性.html"><strong aria-hidden="true">6.6.</strong> 风格和特性</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.7.</strong> 组件</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/组件/q-dialog.html"><strong aria-hidden="true">6.7.1.</strong> q-dialog</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-expansion-item.html"><strong aria-hidden="true">6.7.2.</strong> q-expansion-item</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-page-sticky.html"><strong aria-hidden="true">6.7.3.</strong> q-page-sticky</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-tabs.html"><strong aria-hidden="true">6.7.4.</strong> q-tabs</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-toolbar.html"><strong aria-hidden="true">6.7.5.</strong> q-toolbar</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> HTTP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../HTTP/Content-Disposition.html"><strong aria-hidden="true">7.1.</strong> Content-Disposition</a></li><li class="chapter-item expanded "><a href="../HTTP/Cookie.html" class="active"><strong aria-hidden="true">7.2.</strong> Cookie</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP缓存.html"><strong aria-hidden="true">7.3.</strong> HTTP缓存</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP访问控制.html"><strong aria-hidden="true">7.4.</strong> HTTP访问控制</a></li><li class="chapter-item expanded "><a href="../HTTP/Http响应码.html"><strong aria-hidden="true">7.5.</strong> Http响应码</a></li><li class="chapter-item expanded "><a href="../HTTP/MIME.html"><strong aria-hidden="true">7.6.</strong> MIME</a></li><li class="chapter-item expanded "><a href="../HTTP/http头.html"><strong aria-hidden="true">7.7.</strong> http头</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> ECMAScript</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECMAScript/ECMAScript6简介.html"><strong aria-hidden="true">8.1.</strong> ECMAScript6简介</a></li><li class="chapter-item expanded "><a href="../ECMAScript/Set-Map数据结构.html"><strong aria-hidden="true">8.2.</strong> Set-Map数据结构</a></li><li class="chapter-item expanded "><a href="../ECMAScript/async函数.html"><strong aria-hidden="true">8.3.</strong> async函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/generate函数.html"><strong aria-hidden="true">8.4.</strong> generate函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/let与const命令.html"><strong aria-hidden="true">8.5.</strong> let与const命令</a></li><li class="chapter-item expanded "><a href="../ECMAScript/proxy.html"><strong aria-hidden="true">8.6.</strong> proxy</a></li><li class="chapter-item expanded "><a href="../ECMAScript/symbol.html"><strong aria-hidden="true">8.7.</strong> symbol</a></li><li class="chapter-item expanded "><a href="../ECMAScript/函数.html"><strong aria-hidden="true">8.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/字符串-正则-数值.html"><strong aria-hidden="true">8.9.</strong> 字符串-正则-数值</a></li><li class="chapter-item expanded "><a href="../ECMAScript/对象.html"><strong aria-hidden="true">8.10.</strong> 对象</a></li><li class="chapter-item expanded "><a href="../ECMAScript/数组.html"><strong aria-hidden="true">8.11.</strong> 数组</a></li></ol></li><li class="chapter-item expanded "><a href="../reactor/index.html"><strong aria-hidden="true">9.</strong> reactor</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/1.搭建TS-Reactor环境.html"><strong aria-hidden="true">9.1.</strong> 搭建TS-Reactor环境</a></li><li class="chapter-item expanded "><a href="../reactor/2.jsx.html"><strong aria-hidden="true">9.2.</strong> jsx</a></li><li class="chapter-item expanded "><a href="../reactor/3.元素渲染.html"><strong aria-hidden="true">9.3.</strong> 元素渲染</a></li><li class="chapter-item expanded "><a href="../reactor/4.组件与模块&Props.html"><strong aria-hidden="true">9.4.</strong> 组件与模块&Props</a></li><li class="chapter-item expanded "><a href="../reactor/5.State生命周期.html"><strong aria-hidden="true">9.5.</strong> State生命周期</a></li><li class="chapter-item expanded "><a href="../reactor/6.事件处理.html"><strong aria-hidden="true">9.6.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../reactor/7.条件渲染.html"><strong aria-hidden="true">9.7.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../reactor/8.列表.html"><strong aria-hidden="true">9.8.</strong> 列表</a></li><li class="chapter-item expanded "><a href="../reactor/9.表单.html"><strong aria-hidden="true">9.9.</strong> 表单</a></li><li class="chapter-item expanded "><a href="../reactor/10.组合与继承.html"><strong aria-hidden="true">9.10.</strong> 组合与继承</a></li><li class="chapter-item expanded "><a href="../reactor/11.React最佳实践.html"><strong aria-hidden="true">9.11.</strong> React最佳实践</a></li><li class="chapter-item expanded "><a href="../reactor/高级特性/index.html"><strong aria-hidden="true">9.12.</strong> 高级特性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/高级特性/Refs转发.html"><strong aria-hidden="true">9.12.1.</strong> Refs转发</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="什么是cookie"><a class="header" href="#什么是cookie">什么是Cookie</a></h1>
+<p>​	HTTP Cookie（也叫Web Cookie或浏览器Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据,它会在浏览器下次向同一服务器再发起请求时被携带并发送到服务器上</p>
+<p>​	通常，它用于告知服务端两个请求是否来自同一浏览器，如保持用户的登录状态,Cookie使基于<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#HTTP_is_stateless_but_not_sessionless">无状态</a>的HTTP协议记录稳定的状态信息成为了可能。</p>
+<h1 id="cookie的使用场景"><a class="header" href="#cookie的使用场景">cookie的使用场景</a></h1>
+<ul>
+<li>会话状态管理（如用户登录状态、购物车、游戏分数或其它需要记录的信息）</li>
+<li>个性化设置（如用户自定义设置、主题等）</li>
+<li>浏览器行为跟踪（如跟踪分析用户行为等）</li>
+</ul>
+<blockquote>
+<p>Cookie曾一度用于客户端数据的存储，因当时并没有其它合适的存储办法而作为唯一的存储手段，但现在随着现代浏览器开始支持各种各样的存储方式，Cookie渐渐被淘汰。<strong>由于服务器指定Cookie后，浏览器的每次请求都会携带Cookie数据</strong>，会带来额外的性能开销</p>
+</blockquote>
+<h1 id="创建cookie"><a class="header" href="#创建cookie">创建Cookie</a></h1>
+<p>当服务器收到HTTP请求时，服务器可以在<strong>响应头</strong>里面添加一个<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Set-Cookie"><code>Set-Cookie</code></a>选项。浏览器收到响应后通常会保存下Cookie，之后对该服务器每一次请求中都通过<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cookie"><code>Cookie</code></a>请求头部将Cookie信息发送给服务器。另外，Cookie的过期时间、域、路径、有效期、适用站点都可以根据需要来指定。</p>
+<pre><code>Set-Cookie: &lt;cookie名&gt;=&lt;cookie值&gt;
+</code></pre>
+<pre><code class="language-html">HTTP/1.0 200 OK
+Content-type: text/html
+Set-Cookie: yummy_cookie=choco
+Set-Cookie: tasty_cookie=strawberry
+
+[页面内容]
+</code></pre>
+<p>现在，对该服务器发起的每一次新请求，浏览器都会将之前保存的Cookie信息通过<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Cookie"><code>Cookie</code></a>请求头部再发送给服务器。</p>
+<pre><code class="language-html">GET /sample_page.html HTTP/1.1
+Host: www.example.org
+Cookie: yummy_cookie=choco; tasty_cookie=strawberry
+</code></pre>
+<h1 id="cookie种类"><a class="header" href="#cookie种类">Cookie种类</a></h1>
+<h2 id="会话期cookie"><a class="header" href="#会话期cookie">会话期Cookie</a></h2>
+<p>会话期Cookie是最简单的Cookie：浏览器关闭之后它会被自动删除,也就是说它仅在会话期内有效,会话期Cookie不需要指定过期时间（<code>Expires</code>）或者有效期（Max-Age）。需要注意的是，有些浏览器提供了会话恢复功能，这种情况下即使关闭了浏览器，会话期Cookie也会被保留下来，就好像浏览器从来没有关闭一样。</p>
+<h2 id="持久性cookie"><a class="header" href="#持久性cookie">持久性Cookie</a></h2>
+<p>和关闭浏览器便失效的会话期Cookie不同，持久性Cookie可以指定一个特定的过期时间（<code>Expires</code>）或有效期（<code>Max-Age</code>）。</p>
+<pre><code class="language-html">Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
+</code></pre>
+<blockquote>
+<p>当Cookie的过期时间被设定时，设定的日期和时间只与客户端相关，而不是服务端。</p>
+</blockquote>
+<p>​	</p>
+<h1 id="cookie的secure-和httponly-标记"><a class="header" href="#cookie的secure-和httponly-标记">Cookie的<code>Secure</code> 和<code>HttpOnly</code> 标记</a></h1>
+<p>​	标记为 <code>Secure</code> 的Cookie只应通过被HTTPS协议加密过的请求发送给服务端,但即便设置了 <code>Secure</code> 标记，敏感信息也不应该通过Cookie传输，因为Cookie有其固有的不安全性，<code>Secure </code>标记也无法提供确实的安全保障。从 Chrome 52 和 Firefox 52 开始，不安全的站点（<code>http:</code>）无法使用Cookie的 <code>Secure</code> 标记。</p>
+<p>​	为避免跨域脚本 (<a href="https://developer.mozilla.org/en-US/docs/Glossary/XSS">XSS</a>) 攻击，通过JavaScript的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie"><code>Document.cookie</code></a> API无法访问带有 <code>HttpOnly</code> 标记的Cookie</p>
+<p>它们只应该发送给服务端,如果包含服务端 Session 信息的 Cookie 不想被客户端 JavaScript 脚本调用，那么就应该为其设置 <code>HttpOnly</code> 标记。</p>
+<pre><code class="language-html">Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
+</code></pre>
+<h1 id="cookie的作用域"><a class="header" href="#cookie的作用域">Cookie的作用域</a></h1>
+<ul>
+<li><code>Domain</code> 和 <code>Path</code> 标识定义了Cookie的*作用域：*即Cookie应该发送给哪些URL。</li>
+<li><code>Domain</code> 标识指定了哪些主机可以接受Cookie。如果不指定，默认为<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/location">当前文档的主机</a>（<strong>不包含子域名</strong>）。如果指定了<code>Domain</code>，则一般包含子域名。</li>
+<li>例如，如果设置 <code>Domain=mozilla.org</code>，则Cookie也包含在子域名中（如<code>developer.mozilla.org</code>）。</li>
+<li><code>Path</code> 标识指定了主机下的哪些路径可以接受Cookie（该URL路径必须存在于请求URL中）。以字符 <code>%x2F</code> (&quot;/&quot;) 作为路径分隔符，子路径也会被匹配。</li>
+<li>那么cookie的作用域：<strong>cookie的作用域是domain本身以及domain下的所有子域名</strong></li>
+</ul>
+<pre><code>例如，设置 Path=/docs，则以下地址都会匹配：
+
+/docs
+/docs/Web/
+/docs/Web/HTTP
+</code></pre>
+<h1 id="samesite-cookie"><a class="header" href="#samesite-cookie"><code>SameSite</code> Cookie</a></h1>
+<p>允许服务器要求某个cookie在跨站请求时不会被发送，从而可以阻止跨站请求伪造攻击（<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/CSRF">CSRF</a>）。</p>
+<pre><code class="language-js">Set-Cookie: key=value; SameSite=Strict
+</code></pre>
+<p>SameSite可以有下面三种值：</p>
+<ul>
+<li>
+<p><strong>None</strong></p>
+<p>浏览器会在同站请求、跨站请求下继续发送cookies，不区分大小写。</p>
+</li>
+<li>
+<p><strong><code>Strict</code></strong></p>
+<p>浏览器将只在访问相同站点时发送cookie。（在原有Cookies的限制条件上的加强，如上文“Cookie的作用域” 所述）</p>
+</li>
+<li>
+<p>Lax</p>
+<p>在新版本浏览器中，为默认选项，Same-site cookies 将会为一些跨站子请求保留，如图片加载或者frames的调用，但只有当用户从外部站点导航到URL时才会发送。如link链接</p>
+</li>
+</ul>
+<h1 id="javascript通过documentcookie访问cookie"><a class="header" href="#javascript通过documentcookie访问cookie">JavaScript通过Document.cookie访问Cookie</a></h1>
+<p>通过<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie"><code>Document.cookie</code></a>属性可创建新的Cookie，也可通过该属性访问非<code>HttpOnly</code>标记的Cookie。</p>
+<h1 id="安全"><a class="header" href="#安全">安全</a></h1>
+<p>当机器处于不安全环境时，切记<em>不能</em>通过HTTP Cookie存储、传输敏感信息。</p>
+<h2 id="会话劫持和xss"><a class="header" href="#会话劫持和xss">会话劫持和XSS</a></h2>
+<p>在Web应用中，Cookie常用来标记用户或授权会话。因此，如果Web应用的Cookie被窃取，可能导致授权用户的会话受到攻击。常用的窃取Cookie的方法有利用社会工程学攻击和利用应用程序漏洞进行<a href="https://developer.mozilla.org/en-US/docs/Glossary/XSS">XSS</a>攻击。</p>
+<h2 id="跨站请求伪造csrf"><a class="header" href="#跨站请求伪造csrf">跨站请求伪造（CSRF）</a></h2>
+<p>比如在不安全聊天室或论坛上的一张图片，它实际上是一个给你银行服务器发送提现的请求：</p>
+<pre><code class="language-html">&lt;img src=&quot;http://bank.example.com/withdraw?account=bob&amp;amount=1000000&amp;for=mallory&quot;&gt;
+</code></pre>
+<p>当你打开含有了这张图片的HTML页面时，如果你之前已经登录了你的银行帐号并且Cookie仍然有效（还没有其它验证步骤）,你银行里的钱很可能会被自动转走。有一些方法可以阻止此类事件的发生：</p>
+<ul>
+<li>对用户输入进行过滤来阻止<a href="https://developer.mozilla.org/en-US/docs/Glossary/XSS">XSS</a>；</li>
+<li>任何敏感操作都需要确认；</li>
+<li>用于敏感信息的Cookie只能拥有较短的生命周期；</li>
+</ul>
+<h1 id="第三方cookie"><a class="header" href="#第三方cookie">第三方Cookie</a></h1>
+<ul>
+<li>每个Cookie都会有与之关联的域（Domain）,如果Cookie的域和页面的域相同，那么我们称这个Cookie为<em>第一方Cookie</em>（<em>first-party cookie</em>）</li>
+<li>如果Cookie的域和页面的域不同，则称之为<em>第三方Cookie</em>（<em>third-party cookie</em>.）</li>
+<li>第一方的Cookie也只会发送给设置它们的服务器。通过第三方组件发送的第三方Cookie主要用于广告和网络追踪</li>
+</ul>
+<h2 id="如何让浏览器发送第三方cookie"><a class="header" href="#如何让浏览器发送第三方cookie">如何让浏览器发送第三方cookie</a></h2>
+<p>当前域名只能设置当前域名以及他的子域名</p>
+<p>例如:</p>
+<pre><code>zydya.com 域名设置的cookie 只能 发送给
+blog.zyday.com	one.blog.zyday.com
+自身及其子域名
+</code></pre>
+<h1 id="set-cookie"><a class="header" href="#set-cookie">Set-Cookie</a></h1>
+<p>被用来由服务器端向客户端发送 cookie。</p>
+<pre><code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt; 
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Expires=&lt;date&gt;
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Max-Age=&lt;non-zero-digit&gt;
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Domain=&lt;domain-value&gt;
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Path=&lt;path-value&gt;
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Secure
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; HttpOnly
+
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; SameSite=Strict
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; SameSite=Lax
+
+// Multiple directives are also possible, for example:
+Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; Domain=&lt;domain-value&gt;; Secure; HttpOnly
+</code></pre>
+<h2 id="cookie-namecookie-value"><a class="header" href="#cookie-namecookie-value"><code>&lt;cookie-name&gt;=&lt;cookie-value&gt;</code></a></h2>
+<p>一个 cookie 开始于一个名称/值对：</p>
+<ul>
+<li><code>&lt;cookie-name&gt;</code> 可以是除了控制字符 (CTLs)、空格 (spaces) 或制表符 (tab)之外的任何 US-ASCII 字符。同时不能包含以下分隔字符： ( ) &lt; &gt; @ , ; : \ &quot; / [ ] ? = { }.</li>
+<li><code>&lt;cookie-value&gt;</code> 是可选的，如果存在的话，那么需要包含在双引号里面。支持除了控制字符（CTLs）、空格（whitespace）、双引号（double quotes）、逗号（comma）、分号（semicolon）以及反斜线（backslash）之外的任意 US-ASCII 字符。<strong>关于编码</strong>：许多应用会对 cookie 值按照URL编码（URL encoding）规则进行编码，但是按照 RFC 规范，这不是必须的。不过满足规范中对于 <cookie-value> 所允许使用的字符的要求是有用的。</li>
+<li><strong><code>__Secure-</code> 前缀</strong>：以 __Secure- 为前缀的 cookie（其中连接符是前缀的一部分），必须与 secure 属性一同设置，同时必须应用于安全页面（即使用 HTTPS 访问的页面）。</li>
+<li><strong><code>__Host-</code> 前缀：</strong> 以 __Host- 为前缀的 cookie，必须与 secure 属性一同设置，必须应用于安全页面（即使用 HTTPS 访问的页面），必须不能设置 domain 属性 （也就不会发送给子域），同时 path 属性的值必须为“/”。</li>
+</ul>
+<h2 id="expiresdate"><a class="header" href="#expiresdate"><code>Expires=&lt;date&gt; </code></a></h2>
+<p>可选</p>
+<p>cookie 的最长有效时间，形式为符合 HTTP-date 规范的时间戳。参考 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Date"><code>Date</code></a> 可以获取详细信息。如果没有设置这个属性，那么表示这是一个<strong>会话期 cookie</strong> 。一个会话结束于客户端被关闭时，这意味着会话期 cookie 在彼时会被移除。然而，很多Web浏览器支持会话恢复功能，这个功能可以使浏览器保留所有的tab标签，然后在重新打开浏览器的时候将其还原。与此同时，cookie 也会恢复，就跟从来没有关闭浏览器一样。</p>
+<h2 id="max-agenon-zero-digit"><a class="header" href="#max-agenon-zero-digit"><code>Max-Age=&lt;non-zero-digit&gt;</code></a></h2>
+<p>可选</p>
+<p>在 cookie 失效之前需要经过的秒数。秒数为 0 或 -1 将会使 cookie 直接过期。一些老的浏览器（ie6、ie7 和 ie8）不支持这个属性。对于其他浏览器来说，假如二者 （指 <code>Expires</code> 和<code>Max-Age</code>） 均存在，那么 Max-Age 优先级更高。</p>
+<h2 id="domaindomain-value"><a class="header" href="#domaindomain-value"><code>**Domain=&lt;domain-value&gt;**</code></a></h2>
+<p>可选</p>
+<p>指定 cookie 可以送达的主机名。假如没有指定，那么默认值为当前文档访问地址中的主机部分（但是不包含子域名）。与之前的规范不同的是，域名之前的点号会被忽略。假如指定了域名，那么相当于各个子域名也包含在内了。</p>
+<h2 id="secure"><a class="header" href="#secure"><strong>Secure</strong></a></h2>
+<p>可选</p>
+<p>一个带有安全属性的 cookie 只有在请求使用SSL和HTTPS协议的时候才会被发送到服务器。然而，保密或敏感信息永远不要在 HTTP cookie 中存储或传输，因为整个机制从本质上来说都是不安全的，比如前述协议并不意味着所有的信息都是经过加密的。</p>
+<blockquote>
+<p>非安全站点（http:）已经不能再在 cookie 中设置 secure 指令了</p>
+</blockquote>
+<h2 id="httponly"><a class="header" href="#httponly">HttpOnly</a></h2>
+<p>可选</p>
+<p>设置了 HttpOnly 属性的 cookie 不能使用 JavaScript 经由  <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/cookie"><code>Document.cookie</code></a> 属性、<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest"><code>XMLHttpRequest</code></a> 和  <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Request"><code>Request</code></a> APIs 进行访问，以防范跨站脚本攻击（<a href="https://developer.mozilla.org/en-US/docs/Glossary/XSS">XSS</a>）。</p>
+<h1 id="示例"><a class="header" href="#示例">示例</a></h1>
+<h2 id="会话期-cookie"><a class="header" href="#会话期-cookie">会话期 cookie</a></h2>
+<pre><code class="language-html">Set-Cookie: sessionid=38afes7a8; HttpOnly; Path=/
+</code></pre>
+<h2 id="持久化-cookie"><a class="header" href="#持久化-cookie">持久化 cookie</a></h2>
+<pre><code class="language-html">Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
+</code></pre>
+<h2 id="非法域"><a class="header" href="#非法域">非法域</a></h2>
+<p>属于特定域的 cookie，假如域名不能涵盖原始服务器的域名，那么<a href="https://tools.ietf.org/html/rfc6265#section-4.1.2.3">应该被用户代理拒绝</a>。下面这个 cookie 假如是被域名为 originalcompany.com 的服务器设置的，那么将会遭到用户Http客户端的拒绝(Http连接报错)：</p>
+<pre><code class="language-html">Set-Cookie: qwerty=219ffwef9w0f; Domain=somecompany.co.uk; Path=/; Expires=Wed, 30 Aug 2019 00:00:00 GMT
+</code></pre>
+<h3 id="cookie-前缀"><a class="header" href="#cookie-前缀">Cookie 前缀</a></h3>
+<ul>
+<li>
+<p>名称中包含 __Secure- 或 __Host- 前缀的 cookie，只可以应用在使用了安全连接（HTTPS）的域中，需要同时设置 secure 指令。</p>
+</li>
+<li>
+<p>假如 cookie 以 __Host- 为前缀，那么 path 属性的值必须为 &quot;/&quot; （表示整个站点）,且不能含有 domain 属性。</p>
+</li>
+<li>
+<p>对于不支持 cookie 前缀的客户端，无法保证这些附加的条件成立，所以 cookie 总是被接受的。</p>
+</li>
+</ul>
+<pre><code class="language-html">// 当响应来自于一个安全域（HTTPS）的时候，二者都可以被客户端接受
+Set-Cookie: __Secure-ID=123; Secure; Domain=example.com
+Set-Cookie: __Host-ID=123; Secure; Path=/
+
+// 缺少 Secure 指令，会被拒绝
+Set-Cookie: __Secure-id=1
+
+// 缺少 Path=/ 指令，会被拒绝
+Set-Cookie: __Host-id=1; Secure
+
+// 由于设置了 domain 属性，会被拒绝
+Set-Cookie: __Host-id=1; Secure; Path=/; domain=example.com
+</code></pre>
+<h1 id="参考"><a class="header" href="#参考">参考</a></h1>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies">MDN-Cookie</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../HTTP/Content-Disposition.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../HTTP/HTTP缓存.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../HTTP/Content-Disposition.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../HTTP/HTTP缓存.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

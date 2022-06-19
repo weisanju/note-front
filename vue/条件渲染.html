@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>条件渲染</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title"></li><li class="chapter-item expanded "><a href="../nodejs/index.html"><strong aria-hidden="true">1.</strong> nodejs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/fakeJS.html"><strong aria-hidden="true">1.1.</strong> fakeJS</a></li><li class="chapter-item expanded "><a href="../nodejs/nodejs事件循环.html"><strong aria-hidden="true">1.2.</strong> nodejs事件循环</a></li><li class="chapter-item expanded "><a href="../nodejs/入门.html"><strong aria-hidden="true">1.3.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../nodejs/包管理.html"><strong aria-hidden="true">1.4.</strong> 包管理</a></li><li class="chapter-item expanded "><a href="../nodejs/定时器.html"><strong aria-hidden="true">1.5.</strong> 定时器</a></li><li class="chapter-item expanded "><a href="../nodejs/异步编程.html"><strong aria-hidden="true">1.6.</strong> 异步编程</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> packageInfo参数解析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/packageInfo参数解析/1.scripts.html"><strong aria-hidden="true">1.7.1.</strong> scripts</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Element-UI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Element-UI/Switch开关.html"><strong aria-hidden="true">2.1.</strong> Switch开关</a></li><li class="chapter-item expanded "><a href="../Element-UI/Tree树形控件.html"><strong aria-hidden="true">2.2.</strong> Tree树形控件</a></li><li class="chapter-item expanded "><a href="../Element-UI/backtop.html"><strong aria-hidden="true">2.3.</strong> backtop</a></li><li class="chapter-item expanded "><a href="../Element-UI/card卡片.html"><strong aria-hidden="true">2.4.</strong> card卡片</a></li><li class="chapter-item expanded "><a href="../Element-UI/form表单.html"><strong aria-hidden="true">2.5.</strong> form表单</a></li><li class="chapter-item expanded "><a href="../Element-UI/image图片.html"><strong aria-hidden="true">2.6.</strong> image图片</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-Breadcrumb面包屑.html"><strong aria-hidden="true">2.7.</strong> navigation-Breadcrumb面包屑</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-dropdown.html"><strong aria-hidden="true">2.8.</strong> navigation-dropdown</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-navmenu.html"><strong aria-hidden="true">2.9.</strong> navigation-navmenu</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-steps.html"><strong aria-hidden="true">2.10.</strong> navigation-steps</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-标签页.html"><strong aria-hidden="true">2.11.</strong> navigation-标签页</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-页头.html"><strong aria-hidden="true">2.12.</strong> navigation-页头</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-Notification.html"><strong aria-hidden="true">2.13.</strong> notice-Notification</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-alert.html"><strong aria-hidden="true">2.14.</strong> notice-alert</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-loading.html"><strong aria-hidden="true">2.15.</strong> notice-loading</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message-box.html"><strong aria-hidden="true">2.16.</strong> notice-message-box</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message提示.html"><strong aria-hidden="true">2.17.</strong> notice-message提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/popConfirm.html"><strong aria-hidden="true">2.18.</strong> popConfirm</a></li><li class="chapter-item expanded "><a href="../Element-UI/popOver弹出框.html"><strong aria-hidden="true">2.19.</strong> popOver弹出框</a></li><li class="chapter-item expanded "><a href="../Element-UI/slider滑块.html"><strong aria-hidden="true">2.20.</strong> slider滑块</a></li><li class="chapter-item expanded "><a href="../Element-UI/timeline.html"><strong aria-hidden="true">2.21.</strong> timeline</a></li><li class="chapter-item expanded "><a href="../Element-UI/tooltip.html"><strong aria-hidden="true">2.22.</strong> tooltip</a></li><li class="chapter-item expanded "><a href="../Element-UI/transfer穿梭框.html"><strong aria-hidden="true">2.23.</strong> transfer穿梭框</a></li><li class="chapter-item expanded "><a href="../Element-UI/上传.html"><strong aria-hidden="true">2.24.</strong> 上传</a></li><li class="chapter-item expanded "><a href="../Element-UI/入门.html"><strong aria-hidden="true">2.25.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../Element-UI/分割线.html"><strong aria-hidden="true">2.26.</strong> 分割线</a></li><li class="chapter-item expanded "><a href="../Element-UI/分页.html"><strong aria-hidden="true">2.27.</strong> 分页</a></li><li class="chapter-item expanded "><a href="../Element-UI/基础组件.html"><strong aria-hidden="true">2.28.</strong> 基础组件</a></li><li class="chapter-item expanded "><a href="../Element-UI/头像.html"><strong aria-hidden="true">2.29.</strong> 头像</a></li><li class="chapter-item expanded "><a href="../Element-UI/对话框.html"><strong aria-hidden="true">2.30.</strong> 对话框</a></li><li class="chapter-item expanded "><a href="../Element-UI/常见input输入.html"><strong aria-hidden="true">2.31.</strong> 常见input输入</a></li><li class="chapter-item expanded "><a href="../Element-UI/折叠面板.html"><strong aria-hidden="true">2.32.</strong> 折叠面板</a></li><li class="chapter-item expanded "><a href="../Element-UI/抽屉.html"><strong aria-hidden="true">2.33.</strong> 抽屉</a></li><li class="chapter-item expanded "><a href="../Element-UI/无限滚动.html"><strong aria-hidden="true">2.34.</strong> 无限滚动</a></li><li class="chapter-item expanded "><a href="../Element-UI/日历.html"><strong aria-hidden="true">2.35.</strong> 日历</a></li><li class="chapter-item expanded "><a href="../Element-UI/时间日期选择.html"><strong aria-hidden="true">2.36.</strong> 时间日期选择</a></li><li class="chapter-item expanded "><a href="../Element-UI/标签.html"><strong aria-hidden="true">2.37.</strong> 标签</a></li><li class="chapter-item expanded "><a href="../Element-UI/标记与提示.html"><strong aria-hidden="true">2.38.</strong> 标记与提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/级联选择器.html"><strong aria-hidden="true">2.39.</strong> 级联选择器</a></li><li class="chapter-item expanded "><a href="../Element-UI/表格.html"><strong aria-hidden="true">2.40.</strong> 表格</a></li><li class="chapter-item expanded "><a href="../Element-UI/评分.html"><strong aria-hidden="true">2.41.</strong> 评分</a></li><li class="chapter-item expanded "><a href="../Element-UI/走马灯.html"><strong aria-hidden="true">2.42.</strong> 走马灯</a></li><li class="chapter-item expanded "><a href="../Element-UI/进度条.html"><strong aria-hidden="true">2.43.</strong> 进度条</a></li><li class="chapter-item expanded "><a href="../Element-UI/颜色选择器.html"><strong aria-hidden="true">2.44.</strong> 颜色选择器</a></li></ol></li><li class="chapter-item expanded "><a href="../Html5/index.html"><strong aria-hidden="true">3.</strong> Html5</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Html5/CSS3.html"><strong aria-hidden="true">3.1.</strong> CSS3</a></li><li class="chapter-item expanded "><a href="../Html5/H5canvas图形绘制.html"><strong aria-hidden="true">3.2.</strong> H5canvas图形绘制</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5.html"><strong aria-hidden="true">3.3.</strong> HTML5</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5的结构.html"><strong aria-hidden="true">3.4.</strong> HTML5的结构</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5表单.html"><strong aria-hidden="true">3.5.</strong> HTML5表单</a></li><li class="chapter-item expanded "><a href="../Html5/WebWorkers.html"><strong aria-hidden="true">3.6.</strong> WebWorkers</a></li><li class="chapter-item expanded "><a href="../Html5/多媒体播放.html"><strong aria-hidden="true">3.7.</strong> 多媒体播放</a></li><li class="chapter-item expanded "><a href="../Html5/本地存储.html"><strong aria-hidden="true">3.8.</strong> 本地存储</a></li><li class="chapter-item expanded "><a href="../Html5/离线应用程序.html"><strong aria-hidden="true">3.9.</strong> 离线应用程序</a></li><li class="chapter-item expanded "><a href="../Html5/获取地址位置信息.html"><strong aria-hidden="true">3.10.</strong> 获取地址位置信息</a></li><li class="chapter-item expanded "><a href="../Html5/通信API.html"><strong aria-hidden="true">3.11.</strong> 通信API</a></li></ol></li><li class="chapter-item expanded "><a href="../css/index.html"><strong aria-hidden="true">4.</strong> css</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/BFC.html"><strong aria-hidden="true">4.1.</strong> BFC</a></li><li class="chapter-item expanded "><a href="../css/CSS选择器.html"><strong aria-hidden="true">4.2.</strong> CSS选择器</a></li><li class="chapter-item expanded "><a href="../css/内联元素垂直居中的方式.html"><strong aria-hidden="true">4.3.</strong> 内联元素垂直居中的方式</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化.html"><strong aria-hidden="true">4.4.</strong> 基本视觉格式化</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化-1.html"><strong aria-hidden="true">4.5.</strong> 基本视觉格式化-1</a></li><li class="chapter-item expanded "><a href="../css/弹性布局.html"><strong aria-hidden="true">4.6.</strong> 弹性布局</a></li><li class="chapter-item expanded "><a href="../css/结构与层叠.html"><strong aria-hidden="true">4.7.</strong> 结构与层叠</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> CSS布局方式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS布局方式/flex布局.html"><strong aria-hidden="true">4.8.1.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS布局方式/两栏布局.html"><strong aria-hidden="true">4.8.2.</strong> 两栏布局</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.9.</strong> CSS样式详解</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS样式详解/Grid布局.html"><strong aria-hidden="true">4.9.1.</strong> Grid布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/flex布局.html"><strong aria-hidden="true">4.9.2.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/定位.html"><strong aria-hidden="true">4.9.3.</strong> 定位</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../vue/index.html"><strong aria-hidden="true">5.</strong> vue</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vue/class与style的绑定.html"><strong aria-hidden="true">5.1.</strong> class与style的绑定</a></li><li class="chapter-item expanded "><a href="../vue/事件处理.html"><strong aria-hidden="true">5.2.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../vue/列表渲染.html"><strong aria-hidden="true">5.3.</strong> 列表渲染</a></li><li class="chapter-item expanded "><a href="../vue/条件渲染.html" class="active"><strong aria-hidden="true">5.4.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../vue/模板语法.html"><strong aria-hidden="true">5.5.</strong> 模板语法</a></li><li class="chapter-item expanded "><a href="../vue/组件.html"><strong aria-hidden="true">5.6.</strong> 组件</a></li><li class="chapter-item expanded "><a href="../vue/表单输入绑定.html"><strong aria-hidden="true">5.7.</strong> 表单输入绑定</a></li><li class="chapter-item expanded "><a href="../vue/计算属性和侦听器.html"><strong aria-hidden="true">5.8.</strong> 计算属性和侦听器</a></li></ol></li><li class="chapter-item expanded "><a href="../quasar/index.html"><strong aria-hidden="true">6.</strong> quasar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/quasarCli.html"><strong aria-hidden="true">6.1.</strong> quasarCli</a></li><li class="chapter-item expanded "><a href="../quasar/quasar选项和辅助.html"><strong aria-hidden="true">6.2.</strong> quasar选项和辅助</a></li><li class="chapter-item expanded "><a href="../quasar/vue组件.html"><strong aria-hidden="true">6.3.</strong> vue组件</a></li><li class="chapter-item expanded "><a href="../quasar/布局.html"><strong aria-hidden="true">6.4.</strong> 布局</a></li><li class="chapter-item expanded "><a href="../quasar/网格布局.html"><strong aria-hidden="true">6.5.</strong> 网格布局</a></li><li class="chapter-item expanded "><a href="../quasar/风格和特性.html"><strong aria-hidden="true">6.6.</strong> 风格和特性</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.7.</strong> 组件</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/组件/q-dialog.html"><strong aria-hidden="true">6.7.1.</strong> q-dialog</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-expansion-item.html"><strong aria-hidden="true">6.7.2.</strong> q-expansion-item</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-page-sticky.html"><strong aria-hidden="true">6.7.3.</strong> q-page-sticky</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-tabs.html"><strong aria-hidden="true">6.7.4.</strong> q-tabs</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-toolbar.html"><strong aria-hidden="true">6.7.5.</strong> q-toolbar</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> HTTP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../HTTP/Content-Disposition.html"><strong aria-hidden="true">7.1.</strong> Content-Disposition</a></li><li class="chapter-item expanded "><a href="../HTTP/Cookie.html"><strong aria-hidden="true">7.2.</strong> Cookie</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP缓存.html"><strong aria-hidden="true">7.3.</strong> HTTP缓存</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP访问控制.html"><strong aria-hidden="true">7.4.</strong> HTTP访问控制</a></li><li class="chapter-item expanded "><a href="../HTTP/Http响应码.html"><strong aria-hidden="true">7.5.</strong> Http响应码</a></li><li class="chapter-item expanded "><a href="../HTTP/MIME.html"><strong aria-hidden="true">7.6.</strong> MIME</a></li><li class="chapter-item expanded "><a href="../HTTP/http头.html"><strong aria-hidden="true">7.7.</strong> http头</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> ECMAScript</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECMAScript/ECMAScript6简介.html"><strong aria-hidden="true">8.1.</strong> ECMAScript6简介</a></li><li class="chapter-item expanded "><a href="../ECMAScript/Set-Map数据结构.html"><strong aria-hidden="true">8.2.</strong> Set-Map数据结构</a></li><li class="chapter-item expanded "><a href="../ECMAScript/async函数.html"><strong aria-hidden="true">8.3.</strong> async函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/generate函数.html"><strong aria-hidden="true">8.4.</strong> generate函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/let与const命令.html"><strong aria-hidden="true">8.5.</strong> let与const命令</a></li><li class="chapter-item expanded "><a href="../ECMAScript/proxy.html"><strong aria-hidden="true">8.6.</strong> proxy</a></li><li class="chapter-item expanded "><a href="../ECMAScript/symbol.html"><strong aria-hidden="true">8.7.</strong> symbol</a></li><li class="chapter-item expanded "><a href="../ECMAScript/函数.html"><strong aria-hidden="true">8.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/字符串-正则-数值.html"><strong aria-hidden="true">8.9.</strong> 字符串-正则-数值</a></li><li class="chapter-item expanded "><a href="../ECMAScript/对象.html"><strong aria-hidden="true">8.10.</strong> 对象</a></li><li class="chapter-item expanded "><a href="../ECMAScript/数组.html"><strong aria-hidden="true">8.11.</strong> 数组</a></li></ol></li><li class="chapter-item expanded "><a href="../reactor/index.html"><strong aria-hidden="true">9.</strong> reactor</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/1.搭建TS-Reactor环境.html"><strong aria-hidden="true">9.1.</strong> 搭建TS-Reactor环境</a></li><li class="chapter-item expanded "><a href="../reactor/2.jsx.html"><strong aria-hidden="true">9.2.</strong> jsx</a></li><li class="chapter-item expanded "><a href="../reactor/3.元素渲染.html"><strong aria-hidden="true">9.3.</strong> 元素渲染</a></li><li class="chapter-item expanded "><a href="../reactor/4.组件与模块&Props.html"><strong aria-hidden="true">9.4.</strong> 组件与模块&Props</a></li><li class="chapter-item expanded "><a href="../reactor/5.State生命周期.html"><strong aria-hidden="true">9.5.</strong> State生命周期</a></li><li class="chapter-item expanded "><a href="../reactor/6.事件处理.html"><strong aria-hidden="true">9.6.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../reactor/7.条件渲染.html"><strong aria-hidden="true">9.7.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../reactor/8.列表.html"><strong aria-hidden="true">9.8.</strong> 列表</a></li><li class="chapter-item expanded "><a href="../reactor/9.表单.html"><strong aria-hidden="true">9.9.</strong> 表单</a></li><li class="chapter-item expanded "><a href="../reactor/10.组合与继承.html"><strong aria-hidden="true">9.10.</strong> 组合与继承</a></li><li class="chapter-item expanded "><a href="../reactor/11.React最佳实践.html"><strong aria-hidden="true">9.11.</strong> React最佳实践</a></li><li class="chapter-item expanded "><a href="../reactor/高级特性/index.html"><strong aria-hidden="true">9.12.</strong> 高级特性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/高级特性/Refs转发.html"><strong aria-hidden="true">9.12.1.</strong> Refs转发</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>{% raw %}</p>
+<h1 id="v-ifv-else-ifv-else"><a class="header" href="#v-ifv-else-ifv-else">v-if,v-else-if,v-else</a></h1>
+<pre><code>&lt;div v-if=&quot;type === 'A'&quot;&gt;
+  A
+&lt;/div&gt;
+&lt;div v-else-if=&quot;type === 'B'&quot;&gt;
+  B
+&lt;/div&gt;
+&lt;div v-else-if=&quot;type === 'C'&quot;&gt;
+  C
+&lt;/div&gt;
+&lt;div v-else&gt;
+  Not A/B/C
+&lt;/div&gt;
+</code></pre>
+<p>切换多元素,使用 template 标签</p>
+<pre><code>&lt;template v-if=&quot;ok&quot;&gt;
+  &lt;h1&gt;Title&lt;/h1&gt;
+  &lt;p&gt;Paragraph 1&lt;/p&gt;
+  &lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;/template&gt;
+</code></pre>
+<h1 id="用-key-管理可复用的元素"><a class="header" href="#用-key-管理可复用的元素">用 <code>key</code> 管理可复用的元素</a></h1>
+<p>Vue 会尽可能高效地渲染元素，通常会复用已有元素而不是从头开始渲染。这么做除了使 Vue 变得非常快之外，还有其它一些好处。例如，如果你允许用户在不同的登录方式之间切换：</p>
+<pre><code>&lt;template v-if=&quot;loginType === 'username'&quot;&gt;
+  &lt;label&gt;Username&lt;/label&gt;
+  &lt;input placeholder=&quot;Enter your username&quot;&gt;
+&lt;/template&gt;
+&lt;template v-else&gt;
+  &lt;label&gt;Email&lt;/label&gt;
+  &lt;input placeholder=&quot;Enter your email address&quot;&gt;
+&lt;/template&gt;
+</code></pre>
+<p>​ 那么在上面的代码中切换 <code>loginType</code> 将不会清除用户已经输入的内容。因为两个模板使用了相同的元素，<code>&lt;input&gt;</code> 不会被替换掉——仅仅是替换了它的 <code>placeholder</code>。</p>
+<p>​ 所以 Vue 为你提供了一种方式来表达“这两个元素是完全独立的，不要复用它们”。只需添加一个具有唯一值的 <code>key</code> attribute 即可：</p>
+<pre><code>&lt;template v-if=&quot;loginType === 'username'&quot;&gt;
+  &lt;label&gt;Username&lt;/label&gt;
+  &lt;input placeholder=&quot;Enter your username&quot; key=&quot;username-input&quot;&gt;
+&lt;/template&gt;
+&lt;template v-else&gt;
+  &lt;label&gt;Email&lt;/label&gt;
+  &lt;input placeholder=&quot;Enter your email address&quot; key=&quot;email-input&quot;&gt;
+&lt;/template&gt;
+</code></pre>
+<h1 id="v-show"><a class="header" href="#v-show">v-show</a></h1>
+<p>根据条件展示元素的选项</p>
+<pre><code>&lt;h1 v-show=&quot;ok&quot;&gt;Hello!&lt;/h1&gt;
+</code></pre>
+<p>不同的是带有 <code>v-show</code> 的元素始终会被渲染并保留在 DOM 中。<code>v-show</code> 只是简单地切换元素的 CSS property <code>display</code>。</p>
+<blockquote>
+<p>注意，<code>v-show</code> 不支持 <code>&lt;template&gt;</code> 元素，也不支持 <code>v-else</code>。</p>
+</blockquote>
+<h1 id="v-if-v-show"><a class="header" href="#v-if-v-show">v-if v-show</a></h1>
+<p>​ <code>v-if</code> 是“真正”的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。</p>
+<p>​ <code>v-if</code> 也是<strong>惰性的</strong>：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。</p>
+<p>​ 相比之下，<code>v-show</code> 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 进行切换。</p>
+<p>​ 一般来说，<code>v-if</code> 有更高的切换开销，而 <code>v-show</code> 有更高的初始渲染开销。因此，如果需要非常频繁地切换，则使用 <code>v-show</code> 较好；如果在运行时条件很少改变，则使用 <code>v-if</code> 较好。</p>
+<p>当 <code>v-if</code> 与 <code>v-for</code> 一起使用时，<code>v-for</code> 具有比 <code>v-if</code> 更高的优先级</p>
+<p>{% endraw %}</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../vue/列表渲染.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../vue/模板语法.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../vue/列表渲染.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../vue/模板语法.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

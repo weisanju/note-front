@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>风格和特性</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title"></li><li class="chapter-item expanded "><a href="../nodejs/index.html"><strong aria-hidden="true">1.</strong> nodejs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/fakeJS.html"><strong aria-hidden="true">1.1.</strong> fakeJS</a></li><li class="chapter-item expanded "><a href="../nodejs/nodejs事件循环.html"><strong aria-hidden="true">1.2.</strong> nodejs事件循环</a></li><li class="chapter-item expanded "><a href="../nodejs/入门.html"><strong aria-hidden="true">1.3.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../nodejs/包管理.html"><strong aria-hidden="true">1.4.</strong> 包管理</a></li><li class="chapter-item expanded "><a href="../nodejs/定时器.html"><strong aria-hidden="true">1.5.</strong> 定时器</a></li><li class="chapter-item expanded "><a href="../nodejs/异步编程.html"><strong aria-hidden="true">1.6.</strong> 异步编程</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> packageInfo参数解析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../nodejs/packageInfo参数解析/1.scripts.html"><strong aria-hidden="true">1.7.1.</strong> scripts</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Element-UI</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Element-UI/Switch开关.html"><strong aria-hidden="true">2.1.</strong> Switch开关</a></li><li class="chapter-item expanded "><a href="../Element-UI/Tree树形控件.html"><strong aria-hidden="true">2.2.</strong> Tree树形控件</a></li><li class="chapter-item expanded "><a href="../Element-UI/backtop.html"><strong aria-hidden="true">2.3.</strong> backtop</a></li><li class="chapter-item expanded "><a href="../Element-UI/card卡片.html"><strong aria-hidden="true">2.4.</strong> card卡片</a></li><li class="chapter-item expanded "><a href="../Element-UI/form表单.html"><strong aria-hidden="true">2.5.</strong> form表单</a></li><li class="chapter-item expanded "><a href="../Element-UI/image图片.html"><strong aria-hidden="true">2.6.</strong> image图片</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-Breadcrumb面包屑.html"><strong aria-hidden="true">2.7.</strong> navigation-Breadcrumb面包屑</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-dropdown.html"><strong aria-hidden="true">2.8.</strong> navigation-dropdown</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-navmenu.html"><strong aria-hidden="true">2.9.</strong> navigation-navmenu</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-steps.html"><strong aria-hidden="true">2.10.</strong> navigation-steps</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-标签页.html"><strong aria-hidden="true">2.11.</strong> navigation-标签页</a></li><li class="chapter-item expanded "><a href="../Element-UI/navigation-页头.html"><strong aria-hidden="true">2.12.</strong> navigation-页头</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-Notification.html"><strong aria-hidden="true">2.13.</strong> notice-Notification</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-alert.html"><strong aria-hidden="true">2.14.</strong> notice-alert</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-loading.html"><strong aria-hidden="true">2.15.</strong> notice-loading</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message-box.html"><strong aria-hidden="true">2.16.</strong> notice-message-box</a></li><li class="chapter-item expanded "><a href="../Element-UI/notice-message提示.html"><strong aria-hidden="true">2.17.</strong> notice-message提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/popConfirm.html"><strong aria-hidden="true">2.18.</strong> popConfirm</a></li><li class="chapter-item expanded "><a href="../Element-UI/popOver弹出框.html"><strong aria-hidden="true">2.19.</strong> popOver弹出框</a></li><li class="chapter-item expanded "><a href="../Element-UI/slider滑块.html"><strong aria-hidden="true">2.20.</strong> slider滑块</a></li><li class="chapter-item expanded "><a href="../Element-UI/timeline.html"><strong aria-hidden="true">2.21.</strong> timeline</a></li><li class="chapter-item expanded "><a href="../Element-UI/tooltip.html"><strong aria-hidden="true">2.22.</strong> tooltip</a></li><li class="chapter-item expanded "><a href="../Element-UI/transfer穿梭框.html"><strong aria-hidden="true">2.23.</strong> transfer穿梭框</a></li><li class="chapter-item expanded "><a href="../Element-UI/上传.html"><strong aria-hidden="true">2.24.</strong> 上传</a></li><li class="chapter-item expanded "><a href="../Element-UI/入门.html"><strong aria-hidden="true">2.25.</strong> 入门</a></li><li class="chapter-item expanded "><a href="../Element-UI/分割线.html"><strong aria-hidden="true">2.26.</strong> 分割线</a></li><li class="chapter-item expanded "><a href="../Element-UI/分页.html"><strong aria-hidden="true">2.27.</strong> 分页</a></li><li class="chapter-item expanded "><a href="../Element-UI/基础组件.html"><strong aria-hidden="true">2.28.</strong> 基础组件</a></li><li class="chapter-item expanded "><a href="../Element-UI/头像.html"><strong aria-hidden="true">2.29.</strong> 头像</a></li><li class="chapter-item expanded "><a href="../Element-UI/对话框.html"><strong aria-hidden="true">2.30.</strong> 对话框</a></li><li class="chapter-item expanded "><a href="../Element-UI/常见input输入.html"><strong aria-hidden="true">2.31.</strong> 常见input输入</a></li><li class="chapter-item expanded "><a href="../Element-UI/折叠面板.html"><strong aria-hidden="true">2.32.</strong> 折叠面板</a></li><li class="chapter-item expanded "><a href="../Element-UI/抽屉.html"><strong aria-hidden="true">2.33.</strong> 抽屉</a></li><li class="chapter-item expanded "><a href="../Element-UI/无限滚动.html"><strong aria-hidden="true">2.34.</strong> 无限滚动</a></li><li class="chapter-item expanded "><a href="../Element-UI/日历.html"><strong aria-hidden="true">2.35.</strong> 日历</a></li><li class="chapter-item expanded "><a href="../Element-UI/时间日期选择.html"><strong aria-hidden="true">2.36.</strong> 时间日期选择</a></li><li class="chapter-item expanded "><a href="../Element-UI/标签.html"><strong aria-hidden="true">2.37.</strong> 标签</a></li><li class="chapter-item expanded "><a href="../Element-UI/标记与提示.html"><strong aria-hidden="true">2.38.</strong> 标记与提示</a></li><li class="chapter-item expanded "><a href="../Element-UI/级联选择器.html"><strong aria-hidden="true">2.39.</strong> 级联选择器</a></li><li class="chapter-item expanded "><a href="../Element-UI/表格.html"><strong aria-hidden="true">2.40.</strong> 表格</a></li><li class="chapter-item expanded "><a href="../Element-UI/评分.html"><strong aria-hidden="true">2.41.</strong> 评分</a></li><li class="chapter-item expanded "><a href="../Element-UI/走马灯.html"><strong aria-hidden="true">2.42.</strong> 走马灯</a></li><li class="chapter-item expanded "><a href="../Element-UI/进度条.html"><strong aria-hidden="true">2.43.</strong> 进度条</a></li><li class="chapter-item expanded "><a href="../Element-UI/颜色选择器.html"><strong aria-hidden="true">2.44.</strong> 颜色选择器</a></li></ol></li><li class="chapter-item expanded "><a href="../Html5/index.html"><strong aria-hidden="true">3.</strong> Html5</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Html5/CSS3.html"><strong aria-hidden="true">3.1.</strong> CSS3</a></li><li class="chapter-item expanded "><a href="../Html5/H5canvas图形绘制.html"><strong aria-hidden="true">3.2.</strong> H5canvas图形绘制</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5.html"><strong aria-hidden="true">3.3.</strong> HTML5</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5的结构.html"><strong aria-hidden="true">3.4.</strong> HTML5的结构</a></li><li class="chapter-item expanded "><a href="../Html5/HTML5表单.html"><strong aria-hidden="true">3.5.</strong> HTML5表单</a></li><li class="chapter-item expanded "><a href="../Html5/WebWorkers.html"><strong aria-hidden="true">3.6.</strong> WebWorkers</a></li><li class="chapter-item expanded "><a href="../Html5/多媒体播放.html"><strong aria-hidden="true">3.7.</strong> 多媒体播放</a></li><li class="chapter-item expanded "><a href="../Html5/本地存储.html"><strong aria-hidden="true">3.8.</strong> 本地存储</a></li><li class="chapter-item expanded "><a href="../Html5/离线应用程序.html"><strong aria-hidden="true">3.9.</strong> 离线应用程序</a></li><li class="chapter-item expanded "><a href="../Html5/获取地址位置信息.html"><strong aria-hidden="true">3.10.</strong> 获取地址位置信息</a></li><li class="chapter-item expanded "><a href="../Html5/通信API.html"><strong aria-hidden="true">3.11.</strong> 通信API</a></li></ol></li><li class="chapter-item expanded "><a href="../css/index.html"><strong aria-hidden="true">4.</strong> css</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/BFC.html"><strong aria-hidden="true">4.1.</strong> BFC</a></li><li class="chapter-item expanded "><a href="../css/CSS选择器.html"><strong aria-hidden="true">4.2.</strong> CSS选择器</a></li><li class="chapter-item expanded "><a href="../css/内联元素垂直居中的方式.html"><strong aria-hidden="true">4.3.</strong> 内联元素垂直居中的方式</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化.html"><strong aria-hidden="true">4.4.</strong> 基本视觉格式化</a></li><li class="chapter-item expanded "><a href="../css/基本视觉格式化-1.html"><strong aria-hidden="true">4.5.</strong> 基本视觉格式化-1</a></li><li class="chapter-item expanded "><a href="../css/弹性布局.html"><strong aria-hidden="true">4.6.</strong> 弹性布局</a></li><li class="chapter-item expanded "><a href="../css/结构与层叠.html"><strong aria-hidden="true">4.7.</strong> 结构与层叠</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> CSS布局方式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS布局方式/flex布局.html"><strong aria-hidden="true">4.8.1.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS布局方式/两栏布局.html"><strong aria-hidden="true">4.8.2.</strong> 两栏布局</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.9.</strong> CSS样式详解</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../css/CSS样式详解/Grid布局.html"><strong aria-hidden="true">4.9.1.</strong> Grid布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/flex布局.html"><strong aria-hidden="true">4.9.2.</strong> flex布局</a></li><li class="chapter-item expanded "><a href="../css/CSS样式详解/定位.html"><strong aria-hidden="true">4.9.3.</strong> 定位</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../vue/index.html"><strong aria-hidden="true">5.</strong> vue</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vue/class与style的绑定.html"><strong aria-hidden="true">5.1.</strong> class与style的绑定</a></li><li class="chapter-item expanded "><a href="../vue/事件处理.html"><strong aria-hidden="true">5.2.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../vue/列表渲染.html"><strong aria-hidden="true">5.3.</strong> 列表渲染</a></li><li class="chapter-item expanded "><a href="../vue/条件渲染.html"><strong aria-hidden="true">5.4.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../vue/模板语法.html"><strong aria-hidden="true">5.5.</strong> 模板语法</a></li><li class="chapter-item expanded "><a href="../vue/组件.html"><strong aria-hidden="true">5.6.</strong> 组件</a></li><li class="chapter-item expanded "><a href="../vue/表单输入绑定.html"><strong aria-hidden="true">5.7.</strong> 表单输入绑定</a></li><li class="chapter-item expanded "><a href="../vue/计算属性和侦听器.html"><strong aria-hidden="true">5.8.</strong> 计算属性和侦听器</a></li></ol></li><li class="chapter-item expanded "><a href="../quasar/index.html"><strong aria-hidden="true">6.</strong> quasar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/quasarCli.html"><strong aria-hidden="true">6.1.</strong> quasarCli</a></li><li class="chapter-item expanded "><a href="../quasar/quasar选项和辅助.html"><strong aria-hidden="true">6.2.</strong> quasar选项和辅助</a></li><li class="chapter-item expanded "><a href="../quasar/vue组件.html"><strong aria-hidden="true">6.3.</strong> vue组件</a></li><li class="chapter-item expanded "><a href="../quasar/布局.html"><strong aria-hidden="true">6.4.</strong> 布局</a></li><li class="chapter-item expanded "><a href="../quasar/网格布局.html"><strong aria-hidden="true">6.5.</strong> 网格布局</a></li><li class="chapter-item expanded "><a href="../quasar/风格和特性.html" class="active"><strong aria-hidden="true">6.6.</strong> 风格和特性</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.7.</strong> 组件</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../quasar/组件/q-dialog.html"><strong aria-hidden="true">6.7.1.</strong> q-dialog</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-expansion-item.html"><strong aria-hidden="true">6.7.2.</strong> q-expansion-item</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-page-sticky.html"><strong aria-hidden="true">6.7.3.</strong> q-page-sticky</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-tabs.html"><strong aria-hidden="true">6.7.4.</strong> q-tabs</a></li><li class="chapter-item expanded "><a href="../quasar/组件/q-toolbar.html"><strong aria-hidden="true">6.7.5.</strong> q-toolbar</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> HTTP</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../HTTP/Content-Disposition.html"><strong aria-hidden="true">7.1.</strong> Content-Disposition</a></li><li class="chapter-item expanded "><a href="../HTTP/Cookie.html"><strong aria-hidden="true">7.2.</strong> Cookie</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP缓存.html"><strong aria-hidden="true">7.3.</strong> HTTP缓存</a></li><li class="chapter-item expanded "><a href="../HTTP/HTTP访问控制.html"><strong aria-hidden="true">7.4.</strong> HTTP访问控制</a></li><li class="chapter-item expanded "><a href="../HTTP/Http响应码.html"><strong aria-hidden="true">7.5.</strong> Http响应码</a></li><li class="chapter-item expanded "><a href="../HTTP/MIME.html"><strong aria-hidden="true">7.6.</strong> MIME</a></li><li class="chapter-item expanded "><a href="../HTTP/http头.html"><strong aria-hidden="true">7.7.</strong> http头</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> ECMAScript</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ECMAScript/ECMAScript6简介.html"><strong aria-hidden="true">8.1.</strong> ECMAScript6简介</a></li><li class="chapter-item expanded "><a href="../ECMAScript/Set-Map数据结构.html"><strong aria-hidden="true">8.2.</strong> Set-Map数据结构</a></li><li class="chapter-item expanded "><a href="../ECMAScript/async函数.html"><strong aria-hidden="true">8.3.</strong> async函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/generate函数.html"><strong aria-hidden="true">8.4.</strong> generate函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/let与const命令.html"><strong aria-hidden="true">8.5.</strong> let与const命令</a></li><li class="chapter-item expanded "><a href="../ECMAScript/proxy.html"><strong aria-hidden="true">8.6.</strong> proxy</a></li><li class="chapter-item expanded "><a href="../ECMAScript/symbol.html"><strong aria-hidden="true">8.7.</strong> symbol</a></li><li class="chapter-item expanded "><a href="../ECMAScript/函数.html"><strong aria-hidden="true">8.8.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../ECMAScript/字符串-正则-数值.html"><strong aria-hidden="true">8.9.</strong> 字符串-正则-数值</a></li><li class="chapter-item expanded "><a href="../ECMAScript/对象.html"><strong aria-hidden="true">8.10.</strong> 对象</a></li><li class="chapter-item expanded "><a href="../ECMAScript/数组.html"><strong aria-hidden="true">8.11.</strong> 数组</a></li></ol></li><li class="chapter-item expanded "><a href="../reactor/index.html"><strong aria-hidden="true">9.</strong> reactor</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/1.搭建TS-Reactor环境.html"><strong aria-hidden="true">9.1.</strong> 搭建TS-Reactor环境</a></li><li class="chapter-item expanded "><a href="../reactor/2.jsx.html"><strong aria-hidden="true">9.2.</strong> jsx</a></li><li class="chapter-item expanded "><a href="../reactor/3.元素渲染.html"><strong aria-hidden="true">9.3.</strong> 元素渲染</a></li><li class="chapter-item expanded "><a href="../reactor/4.组件与模块&Props.html"><strong aria-hidden="true">9.4.</strong> 组件与模块&Props</a></li><li class="chapter-item expanded "><a href="../reactor/5.State生命周期.html"><strong aria-hidden="true">9.5.</strong> State生命周期</a></li><li class="chapter-item expanded "><a href="../reactor/6.事件处理.html"><strong aria-hidden="true">9.6.</strong> 事件处理</a></li><li class="chapter-item expanded "><a href="../reactor/7.条件渲染.html"><strong aria-hidden="true">9.7.</strong> 条件渲染</a></li><li class="chapter-item expanded "><a href="../reactor/8.列表.html"><strong aria-hidden="true">9.8.</strong> 列表</a></li><li class="chapter-item expanded "><a href="../reactor/9.表单.html"><strong aria-hidden="true">9.9.</strong> 表单</a></li><li class="chapter-item expanded "><a href="../reactor/10.组合与继承.html"><strong aria-hidden="true">9.10.</strong> 组合与继承</a></li><li class="chapter-item expanded "><a href="../reactor/11.React最佳实践.html"><strong aria-hidden="true">9.11.</strong> React最佳实践</a></li><li class="chapter-item expanded "><a href="../reactor/高级特性/index.html"><strong aria-hidden="true">9.12.</strong> 高级特性</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../reactor/高级特性/Refs转发.html"><strong aria-hidden="true">9.12.1.</strong> Refs转发</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="排版typography"><a class="header" href="#排版typography">排版（Typography）</a></h1>
+<p>我们将在以下各节中处理Quasar提供的排版。</p>
+<h2 id="字体由大到小"><a class="header" href="#字体由大到小">字体由大到小</a></h2>
+<pre><code>text-h1
+text-h2
+text-h3
+text-h4
+text-h5
+text-h6
+text-subtitle1
+text-subtitle2
+text-body1
+text-body2
+text-caption
+text-overline
+</code></pre>
+<h2 id="字体粗细"><a class="header" href="#字体粗细">字体粗细</a></h2>
+<pre><code>text-weight-thin
+text-weight-light
+text-weight-regular
+text-weight-medium
+text-weight-bold
+text-weight-bolder
+</code></pre>
+<h2 id="css辅助类"><a class="header" href="#css辅助类">CSS辅助类</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>text-right</code></td><td style="text-align: left">将文本对齐到右侧</td></tr>
+<tr><td style="text-align: left"><code>text-left</code></td><td style="text-align: left">将文字对齐到左侧</td></tr>
+<tr><td style="text-align: left"><code>text-center</code></td><td style="text-align: left">将文本对齐到中心</td></tr>
+<tr><td style="text-align: left"><code>text-justify</code></td><td style="text-align: left">文字将是合理的</td></tr>
+<tr><td style="text-align: left"><code>text-bold</code></td><td style="text-align: left">文本将以粗体显示</td></tr>
+<tr><td style="text-align: left"><code>text-italic</code></td><td style="text-align: left">文本将以斜体显示</td></tr>
+<tr><td style="text-align: left"><code>text-no-wrap</code></td><td style="text-align: left">非包装文本（适用于<code>white-space：nowrap</code>）</td></tr>
+<tr><td style="text-align: left"><code>text-strike</code></td><td style="text-align: left">应用<code>text-decoration: line-through</code></td></tr>
+<tr><td style="text-align: left"><code>text-uppercase</code></td><td style="text-align: left">将文本转换为大写</td></tr>
+<tr><td style="text-align: left"><code>text-lowercase</code></td><td style="text-align: left">将文本转换为小写</td></tr>
+<tr><td style="text-align: left"><code>text-capitalize</code></td><td style="text-align: left">使文本的第一个字母大写</td></tr>
+</tbody></table>
+<h2 id="默认字体"><a class="header" href="#默认字体">默认字体</a></h2>
+<p>嵌入的默认Webfont是<a href="https://fonts.google.com/specimen/Roboto">Roboto</a>。但这不是必需的。你可以使用任何你喜欢的字体。</p>
+<p>oboto带有5种不同的字体粗细，您可以使用：100,300,400,500,700。</p>
+<p>这里是默认嵌入Roboto字体的配置，如果您寻求删除Roboto字体的话：</p>
+<pre><code class="language-js">// 文件: /quasar.conf.js
+extras: [
+  'roboto-font'
+]
+</code></pre>
+<h2 id="添加自定义字体"><a class="header" href="#添加自定义字体">添加自定义字体</a></h2>
+<p>也可以包括其他字体以在应用程序中使用它们。 以下是一种实现方法：</p>
+<ol>
+<li>在您选择的目录中复制新的Webfont<code>[customfont].woff</code>（或其扩展名；建议使用<code>woff</code>以在所有浏览器之间兼容），例如：<code>./src/css/fonts/[customfont.woff]</code></li>
+<li>在<code>./src/css/app.{css|sass|scss|styl}</code>中声明字体（或在您认为合适的任何位置，但正确更新webfont文件的相对路径）：</li>
+</ol>
+<pre><code class="language-css">@font-face {
+  font-family: customfont;
+  src: url(./fonts/customfont.woff);
+}
+
+// 声明一个应用它的类
+.my-font {
+  font-family: 'customfont';
+}
+</code></pre>
+<ol>
+<li>然后在需要的地方使用该类。</li>
+</ol>
+<h1 id="调色板color-palette"><a class="header" href="#调色板color-palette">调色板(Color Palette)</a></h1>
+<p>Quasar Framework开箱即可提供多种颜色选择。 您可以在CSS代码中将它们用作Stylus变量，或者直接在HTML模板中将它们用作CSS类。</p>
+<h2 id="品牌brand颜色"><a class="header" href="#品牌brand颜色">品牌(Brand)颜色</a></h2>
+<p>primary</p>
+<p>secondary</p>
+<p>accent</p>
+<p>dark</p>
+<p>positive</p>
+<p>negative</p>
+<p>info</p>
+<p>warning</p>
+<h2 id="颜色列表"><a class="header" href="#颜色列表"><a href="http://www.quasarchs.com/style/color-palette#%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8">颜色列表</a></a></h2>
+<h2 id="使用css类"><a class="header" href="#使用css类">使用CSS类</a></h2>
+<p>使用<code>text-</code>或<code>bg-</code>前缀作为类名来改变文本的颜色或背景的颜色。</p>
+<pre><code class="language-html">&lt;!-- 更改文字颜色 --&gt;
+&lt;p class=&quot;text-primary&quot;&gt;....&lt;/p&gt;
+
+&lt;!-- 改变背景色 --&gt;
+&lt;p class=&quot;bg-positive&quot;&gt;...&lt;/p&gt;
+</code></pre>
+<h2 id="使用sassscssstylus变量"><a class="header" href="#使用sassscssstylus变量">使用Sass/SCSS/Stylus变量</a></h2>
+<p>在应用程序的<code>*.vue</code>文件中，可以使用<code>$primary</code>，<code>$red-1</code>等颜色。请注意，对于Sass/SCSS，您将需要“@quasar/app” v1.1.0 +和Quasar v1.1.1 +。</p>
+<pre><code class="language-html">&lt;!-- 注意lang=&quot;sass&quot; --&gt;
+&lt;style lang=&quot;sass&quot;&gt;
+div
+  color: $red-1
+  background-color: $grey-5
+&lt;/style&gt;
+&lt;!-- 注意lang=&quot;scss&quot; --&gt;
+&lt;style lang=&quot;scss&quot;&gt;
+div {
+  color: $red-1;
+  background-color: $grey-5;
+}
+&lt;/style&gt;
+&lt;!-- 注意lang=&quot;stylus&quot; --&gt;
+&lt;style lang=&quot;stylus&quot;&gt;
+div
+  color $red-1
+  background-color $grey-5
+&lt;/style&gt;
+</code></pre>
+<h2 id="添加自己的颜色"><a class="header" href="#添加自己的颜色">添加自己的颜色</a></h2>
+<p>如果您想为自己的组件使用自己的颜色（假设我们要添加一种名为“ brand”的颜色），您要做的就是将以下CSS添加到您的应用中：</p>
+<pre><code class="language-css">.text-brand {
+  color: #a2aa33;
+}
+.bg-brand {
+  background: #a2aa33;
+}
+</code></pre>
+<p>现在我们可以将这种颜色用于Quasar组件：</p>
+<pre><code class="language-html">&lt;q-btn color=&quot;brand&quot; ... /&gt;
+</code></pre>
+<h2 id="品牌brand颜色的动态变化动态主题颜色"><a class="header" href="#品牌brand颜色的动态变化动态主题颜色">品牌(Brand)颜色的动态变化（动态主题颜色）</a></h2>
+<p>WARNING</p>
+<p>这仅在<a href="https://caniuse.com/#feat=css-variables">支持CSS变量的浏览器</a>（自定义属性）上受支持。 它不会在IE11上工作，但它会恢复到CSS主题中的品牌颜色。</p>
+<p>您可以在运行时动态定制品牌颜色： <code>primary</code>, <code>secondary</code>, <code>accent</code>, <code>dark</code>, <code>positive</code>, <code>negative</code>, <code>info</code>, <code>warning</code>。这意味着您可以使用默认颜色主题构建应用程序的一个构建版本，但显示时使用运行时所选的一个。</p>
+<p>主要颜色配置使用存储在根元素（<code>:root</code>）中的CSS自定义属性完成。每个属性的名称都是<code>--q-color-${name}</code>（例如：<code>--q-color-primary</code>，<code>--q-color-secondary</code>），并且应该具有有效的CSS颜色作为值。</p>
+<p>CSS自定义属性使用与普通CSS相同的继承规则，因此只能重新定义所需的颜色，其余的将从父元素继承。</p>
+<p>推荐的工作流程是在<code>html</code>（<code>document.documentElement</code>）或<code>body</code>（<code>document.body</code>）元素上设置自定义的颜色属性。这将允许您通过删除自定义颜色来恢复为默认颜色。</p>
+<p>有关CSS自定义属性（变量）的更多信息：http://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</p>
+<h3 id="辅助方法---setbrand"><a class="header" href="#辅助方法---setbrand">辅助方法 - setBrand</a></h3>
+<p>在<code>colors</code>实用程序中，Quasar提供了一个辅助方法用于设置自定义颜色：<code>setBrand(colorName,colorValue[,element])</code></p>
+<table><thead><tr><th style="text-align: left">参数</th><th style="text-align: left">类型</th><th style="text-align: left">必需</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>colorName</code></td><td style="text-align: left">字符串</td><td style="text-align: left"><em>是</em></td><td style="text-align: left"><code>primary</code>, <code>secondary</code>, <code>accent</code>, <code>dark</code>, <code>positive</code>, <code>negative</code>, <code>info</code>, <code>warning</code>之一</td></tr>
+<tr><td style="text-align: left"><code>colorValue</code></td><td style="text-align: left">字符串</td><td style="text-align: left"><em>是</em></td><td style="text-align: left">有效的CSS颜色值</td></tr>
+<tr><td style="text-align: left"><code>element</code></td><td style="text-align: left">元素</td><td style="text-align: left">-</td><td style="text-align: left">（默认：<code>document.body</code>）设置自定义属性的元素。</td></tr>
+</tbody></table>
+<p>使用辅助方法设置品牌颜色的示例：</p>
+<pre><code class="language-js">import { colors } from 'quasar'
+
+colors.setBrand('light', '#DDD')
+colors.setBrand('primary', '#33F')
+colors.setBrand('primary', '#F33', document.getElementById('rebranded-section-id'))
+</code></pre>
+<blockquote>
+<p>WARNING</p>
+<p>辅助方法还将负责为品牌颜色（<code>positive</code>，<code>negative</code>，<code>light</code>）设置相关的自定义属性，所以这是推荐的使用方式，而不是原始的Javascript<code>setProperty（）</code>。</p>
+</blockquote>
+<h1 id="主题生成器"><a class="header" href="#主题生成器"><a href="http://www.quasarchs.com/style/theme-builder#Introduction">主题生成器</a></a></h1>
+<h1 id="暗色模式v13"><a class="header" href="#暗色模式v13">暗色模式v1.3+</a></h1>
+<p>暗色模式是一种补充模式，可用于在UI上显示大部分暗色表面。该设计减少了设备屏幕发出的光，同时保持了可读性所需的最小颜色对比度。</p>
+<p>暗色模式的优点是：</p>
+<ul>
+<li>通过减少眼睛疲劳来增强视觉人体工程学。</li>
+<li>提供夜间或黑暗环境中的舒适使用。</li>
+<li>主要在设备屏幕为OLED或AMOLED的情况下节省电池电量，从而可以长时间使用设备而无需充电。</li>
+</ul>
+<h2 id="它能做什么"><a class="header" href="#它能做什么">它能做什么</a></h2>
+<ol>
+<li>它为页面设置默认的暗色背景（您可以使用<code>body.body--dark</code>选择器通过CSS轻松覆盖该背景）</li>
+<li>所有具有<code>dark</code>属性的Quasar组件将自动将此属性设置为<code>true</code>。无需手动进行。</li>
+</ol>
+<p>自动检测通过查看<code>prefers-color-scheme: dark</code>媒体查询来进行，并且是动态的。如果您的应用程序在运行时客户端浏览器/平台切换到暗色模式，则它还将更新Quasar的暗色模式（如果暗色模式设置为<code>auto</code>）。</p>
+<h2 id="如何使用它"><a class="header" href="#如何使用它">如何使用它</a></h2>
+<p>您可以通过<a href="http://www.quasarchs.com/quasar-plugins/dark">暗色插件</a>在暗色模式和亮色模式（默认）之间轻松切换。</p>
+<h2 id="如何设计您的应用"><a class="header" href="#如何设计您的应用">如何设计您的应用</a></h2>
+<p>由于您的应用程序可以处于暗色模式，也可以不处于暗色模式，因此您可以利用带有<code>body</code>标签的CSS类轻松地设置样式：<code>body--light</code>或者<code>body--dark</code>。 <strong>也就是说，如果您想同时支持两种模式。</strong></p>
+<pre><code class="language-css">.body--light {
+  /* ... */
+}
+
+.body--dark {
+  /* ... */
+}
+</code></pre>
+<p>您是否要覆盖默认的暗色模式页面背景色：</p>
+<pre><code class="language-css">body.body--dark {
+  background: #000
+}
+</code></pre>
+<h1 id="css间距类"><a class="header" href="#css间距类">CSS间距类</a></h1>
+<p>Quasar提供了CSS类来帮助您为DOM元素或组件提供间距。 所有选项都以<code>q-</code>为前缀，然后细分为类型（T），方向（D）和大小（S）。 有关所有可能的排列，请参见下表。</p>
+<h2 id="语法"><a class="header" href="#语法">语法</a></h2>
+<pre><code class="language-js">q-[p|m][t|r|b|l|a|x|y]-[none|auto|xs|sm|md|lg|xl]
+    T       D                   S
+
+T - type
+  - values: p (padding), m (margin)
+
+D - direction
+  - values:
+      t (top), r (right), b (bottom), l (left),
+      a (all), x (both left &amp; right), y (both top &amp; bottom)
+
+S - size
+  - values:
+      none,
+      auto (ONLY for specific margins: q-ml-*, q-mr-*, q-mx-*),
+      xs (extra small),
+      sm (small),
+      md (medium),
+      lg (large),
+      xl (extra large)
+</code></pre>
+<h2 id="flex插件addons"><a class="header" href="#flex插件addons">Flex插件(Addons)</a></h2>
+<p>启用后（通过<code>quasar.conf.js &gt; framework &gt; cssAddon: true</code>），它将为所有与间距相关的CSS类提供断点感知版本。</p>
+<blockquote>
+<p>请注意，启用后，CSS占用空间将明显增加。 因此，只有在您确实需要时才这样做。</p>
+</blockquote>
+<pre><code class="language-js">.q-(p|m)(t|r|b|l|a|x|y)-&lt;bp&gt;-(none|auto|xs|sm|md|lg|xl)
+</code></pre>
+<p>例子: <code>q-pa-xs-md q-pa-sm-sm q-px-md-lg q-py-md-md</code>.</p>
+<h1 id="阴影"><a class="header" href="#阴影">阴影</a></h1>
+<p>简单而有效的方法来添加阴影以创建深度/拔高效果。 阴影符合Material Design规范（24级深度）。</p>
+<h2 id="用法"><a class="header" href="#用法">用法</a></h2>
+<table><thead><tr><th style="text-align: left">CSS类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>no-shadow</code></td><td style="text-align: left">移除任何阴影</td></tr>
+<tr><td style="text-align: left"><code>inset-shadow</code></td><td style="text-align: left">设置一个插入阴影</td></tr>
+<tr><td style="text-align: left"><code>shadow-1</code></td><td style="text-align: left">设置1的深度</td></tr>
+<tr><td style="text-align: left"><code>shadow-2</code></td><td style="text-align: left">设置2的深度</td></tr>
+<tr><td style="text-align: left"><code>shadow-N</code></td><td style="text-align: left">其中<code>N</code>是1到24的整数</td></tr>
+<tr><td style="text-align: left"><code>shadow-transition</code></td><td style="text-align: left">在阴影上应用CSS转换; 最好与<code>hoverable</code>类一起使用</td></tr>
+</tbody></table>
+<pre><code class="language-vue">&lt;template&gt;
+  &lt;div class=&quot;q-pa-md&quot;&gt;
+    &lt;div
+      class=&quot;flex inline shadow-box flex-center&quot;
+      v-for=&quot;n in 24&quot; :key=&quot;n&quot;
+      :class=&quot;`shadow-${n}`&quot;
+    &gt;
+      .shadow-{{ n }}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<p>上面的阴影指向元素的底部。 如果您希望它们指向元素的顶部，请在数字前加上<code>up</code></p>
+<table><thead><tr><th style="text-align: left">CSS类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>shadow-up-1</code></td><td style="text-align: left">设置1的深度</td></tr>
+<tr><td style="text-align: left"><code>shadow-up-2</code></td><td style="text-align: left">设置2的深度</td></tr>
+<tr><td style="text-align: left"><code>shadow-up-N</code></td><td style="text-align: left">其中<code>N</code>是1到24的整数</td></tr>
+</tbody></table>
+<h1 id="断点"><a class="header" href="#断点"><a href="http://www.quasarchs.com/style/breakpoints#Introduction">断点</a></a></h1>
+<h1 id="body类"><a class="header" href="#body类">body类</a></h1>
+<p>Quasar将一些非常有用的辅助CSS类附加到document.body，您可以利用：</p>
+<table><thead><tr><th style="text-align: left">名称</th><th style="text-align: left">描述</th></tr></thead><tbody>
+<tr><td style="text-align: left">body–dark</td><td style="text-align: left">在<a href="http://www.quasarchs.com/style/dark-mode">暗色模式</a>下</td></tr>
+<tr><td style="text-align: left">body–light</td><td style="text-align: left">不在<a href="http://www.quasarchs.com/style/dark-mode">dark mode</a>下</td></tr>
+<tr><td style="text-align: left">desktop</td><td style="text-align: left">当客户端在桌面设备上时</td></tr>
+<tr><td style="text-align: left">mobile</td><td style="text-align: left">客户端在移动设备上时</td></tr>
+<tr><td style="text-align: left">touch</td><td style="text-align: left">当客户端有触摸支持时</td></tr>
+<tr><td style="text-align: left">no-touch</td><td style="text-align: left">当客户端没有触摸支持时</td></tr>
+<tr><td style="text-align: left">platform-android</td><td style="text-align: left">当客户端在Android设备上时</td></tr>
+<tr><td style="text-align: left">platform-ios</td><td style="text-align: left">当客户端在iOS设备上时</td></tr>
+<tr><td style="text-align: left">native-mobile</td><td style="text-align: left">当客户端在一个<a href="http://www.quasarchs.com/quasar-cli/developing-cordova-apps/introduction">Cordova</a>或<a href="http://www.quasarchs.com/quasar-cli/developing-capacitor-apps/introduction">Capacitor</a>应用上时</td></tr>
+<tr><td style="text-align: left">electron</td><td style="text-align: left">当客户端在一个<a href="http://www.quasarchs.com/quasar-cli/developing-electron-apps/introduction">Electron</a>应用上时</td></tr>
+<tr><td style="text-align: left">bex</td><td style="text-align: left">通过浏览器扩展程序运行应用时</td></tr>
+<tr><td style="text-align: left">within-iframe</td><td style="text-align: left">当应用从iframe运行时</td></tr>
+<tr><td style="text-align: left"><code>screen--*</code></td><td style="text-align: left">如果<a href="http://www.quasarchs.com/options/screen-plugin#How-to-enable-body-classes">启用（仅）</a>，则告诉当前窗口断点（<code>screen--xs</code>, <code>screen--sm</code>, …, <code>screen--xl</code>）（<strong>Quasar v1.5.3+</strong>）.</td></tr>
+</tbody></table>
+<h1 id="css可见性"><a class="header" href="#css可见性">CSS可见性</a></h1>
+<p>有一些CSS类可以用于常用功能。</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>disabled</code></td><td style="text-align: left">游标更改为“disable”，不透明度设置为较低值。</td></tr>
+<tr><td style="text-align: left"><code>hidden</code></td><td style="text-align: left">将<code>display</code>设置为<code>none</code>。与下面的类相比 - <code>hidden</code>类意味着元素不会显示并且不会占用布局中的空间。</td></tr>
+<tr><td style="text-align: left"><code>invisible</code></td><td style="text-align: left">将<code>visibility</code>设置为<code>hidden</code>。与上面的类相比，<code>invisible</code>类意味着元素不会显示，但它仍然占用布局空间。</td></tr>
+<tr><td style="text-align: left"><code>transparent</code></td><td style="text-align: left">背景颜色是透明的。</td></tr>
+<tr><td style="text-align: left"><code>dimmed</code></td><td style="text-align: left">在您的元素上应用深色透明覆盖层。不要使用在已经有**:after**伪元素的元素。</td></tr>
+<tr><td style="text-align: left"><code>light-dimmed</code></td><td style="text-align: left">在您的元素上应用白色透明覆盖层。不要使用在已经有**:after**伪元素的元素。</td></tr>
+<tr><td style="text-align: left"><code>ellipsis</code></td><td style="text-align: left">截取文本并在没有足够的可用空间时显示省略号。</td></tr>
+<tr><td style="text-align: left"><code>ellipsis-2-lines</code></td><td style="text-align: left">当两行中没有足够的可用空间时，截断文本并显示省略号（仅适用于Webkit浏览器）。</td></tr>
+<tr><td style="text-align: left"><code>ellipsis-3-lines</code></td><td style="text-align: left">当三行中没有足够的可用空间时，截断文本并显示省略号（仅适用于Webkit浏览器）。</td></tr>
+<tr><td style="text-align: left"><code>z-top</code></td><td style="text-align: left">将元素定位在任何其他组件的顶部，但位于Popovers、提示框、通知框之后。</td></tr>
+<tr><td style="text-align: left"><code>z-max</code></td><td style="text-align: left">将元素定位在任何其他组件（包括Drawer，Modals，Notifications，Layout header/footer…）之上</td></tr>
+</tbody></table>
+<h2 id="窗口宽度相关"><a class="header" href="#窗口宽度相关">窗口宽度相关</a></h2>
+<p>首先，让我们定义断点是什么：</p>
+<table><thead><tr><th style="text-align: left">窗口大小</th><th style="text-align: left">名称</th><th style="text-align: left">宽度阈值（以像素为单位）</th></tr></thead><tbody>
+<tr><td style="text-align: left">Extra Small</td><td style="text-align: left"><code>xs</code></td><td style="text-align: left">高达599px</td></tr>
+<tr><td style="text-align: left">Small</td><td style="text-align: left"><code>sm</code></td><td style="text-align: left">高达1023px</td></tr>
+<tr><td style="text-align: left">Medium</td><td style="text-align: left"><code>md</code></td><td style="text-align: left">高达1439px</td></tr>
+<tr><td style="text-align: left">Large</td><td style="text-align: left"><code>lg</code></td><td style="text-align: left">高达1919px</td></tr>
+<tr><td style="text-align: left">Extra Large</td><td style="text-align: left"><code>xl</code></td><td style="text-align: left">大于1920像素</td></tr>
+</tbody></table>
+<p>窗口宽度相关的CSS类。</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>xs</code></td><td style="text-align: left">仅在特小窗口上显示</td></tr>
+<tr><td style="text-align: left"><code>sm</code></td><td style="text-align: left">仅在小窗口上显示</td></tr>
+<tr><td style="text-align: left"><code>md</code></td><td style="text-align: left">仅在中等大小的窗口上显示</td></tr>
+<tr><td style="text-align: left"><code>lg</code></td><td style="text-align: left">仅在大窗口上显示</td></tr>
+<tr><td style="text-align: left"><code>xl</code></td><td style="text-align: left">仅在特大窗口上显示</td></tr>
+</tbody></table>
+<p><strong>如果它低于其中一个尺寸并且大于其中一个尺寸</strong>, 您仍然可以显示某些DOM元素或组件。 只需附加来自“低于”和“大于”的前缀<code>lt-</code> 或 <code>gt-</code>。例如：<code>lt-md</code>（仅在xs和sm上显示），<code>lt-xl</code>（仅在xs，sm，md和lg窗口中显示），<code>gt-md</code>（大于中等窗口的显示：lg和xl）。</p>
+<p>TIP</p>
+<p>对于内置块，您可以和可见性类<code>inline</code>结合使用。</p>
+<p>例子: <code>&lt;span class=&quot;gt-sm inline&quot;&gt;...&lt;/span&gt;</code></p>
+<h2 id="平台相关"><a class="header" href="#平台相关">平台相关</a></h2>
+<p>仅在以下位置可见：</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>desktop-only</code></td><td style="text-align: left">仅在桌面上可见</td></tr>
+<tr><td style="text-align: left"><code>mobile-only</code></td><td style="text-align: left">仅在移动设备上可见</td></tr>
+<tr><td style="text-align: left"><code>native-mobile-only</code></td><td style="text-align: left">仅在Cordova/Capacitor上可见</td></tr>
+<tr><td style="text-align: left"><code>cordova-only</code></td><td style="text-align: left">仅在Cordova包装的应用上可见</td></tr>
+<tr><td style="text-align: left"><code>capacitor-only</code></td><td style="text-align: left">仅在Capacitor包装的应用上可见</td></tr>
+<tr><td style="text-align: left"><code>electron-only</code></td><td style="text-align: left">仅在Electron包装的应用上可见</td></tr>
+<tr><td style="text-align: left"><code>touch-only</code></td><td style="text-align: left">仅在具有触摸功能的平台上可见</td></tr>
+<tr><td style="text-align: left"><code>platform-ios-only</code></td><td style="text-align: left">仅在iOS平台上可见</td></tr>
+<tr><td style="text-align: left"><code>platform-android-only</code></td><td style="text-align: left">仅在Android平台上可见</td></tr>
+<tr><td style="text-align: left"><code>within-iframe-only</code></td><td style="text-align: left">仅当整个网站在IFRAME标记下时才可见</td></tr>
+</tbody></table>
+<p>在以下位置隐藏：</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>desktop-hide</code></td><td style="text-align: left">在桌面上隐藏</td></tr>
+<tr><td style="text-align: left"><code>mobile-hide</code></td><td style="text-align: left">在手机上隐藏</td></tr>
+<tr><td style="text-align: left"><code>native-mobile-hide</code></td><td style="text-align: left">在Cordova/Capacitor上隐藏</td></tr>
+<tr><td style="text-align: left"><code>cordova-hide</code></td><td style="text-align: left">在Cordova包装的应用上隐藏</td></tr>
+<tr><td style="text-align: left"><code>capacitor-hide</code></td><td style="text-align: left">在Capacitor包装的应用上隐藏</td></tr>
+<tr><td style="text-align: left"><code>electron-hide</code></td><td style="text-align: left">在Electron包装的应用上隐藏</td></tr>
+<tr><td style="text-align: left"><code>touch-hide</code></td><td style="text-align: left">在支持触摸的平台上隐藏</td></tr>
+<tr><td style="text-align: left"><code>platform-ios-hide</code></td><td style="text-align: left">在iOS平台上隐藏</td></tr>
+<tr><td style="text-align: left"><code>platform-android-hide</code></td><td style="text-align: left">在Android平台上隐藏</td></tr>
+<tr><td style="text-align: left"><code>within-iframe-hide</code></td><td style="text-align: left">仅当整个网站位于IFRAME标记下时才隐藏</td></tr>
+</tbody></table>
+<h2 id="方向相关"><a class="header" href="#方向相关">方向相关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>orientation-portrait</code></td><td style="text-align: left">仅当屏幕方向为<em>纵向</em>时才可见</td></tr>
+<tr><td style="text-align: left"><code>orientation-landscape</code></td><td style="text-align: left">仅当屏幕方向为<em>横向</em>时才可见</td></tr>
+</tbody></table>
+<h2 id="打印相关"><a class="header" href="#打印相关">打印相关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>print-only</code></td><td style="text-align: left">仅在打印媒体上可见 - 在<em>屏幕</em>媒体隐藏</td></tr>
+<tr><td style="text-align: left"><code>print-hide</code></td><td style="text-align: left"><em>屏幕</em>媒体上可见 - 在<em>打印</em>媒体隐藏</td></tr>
+</tbody></table>
+<h1 id="定位"><a class="header" href="#定位">定位</a></h1>
+<p>Quasar提供的CSS类可以帮助您轻松定位DOM元素：</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>fullscreen</code></td><td style="text-align: left">全屏</td></tr>
+<tr><td style="text-align: left"><code>fixed</code></td><td style="text-align: left">将<code>position</code>设置为<code>fixed</code>而不指定<code>top</code>，<code>left</code>，<code>right</code>或<code>bottom</code>属性</td></tr>
+<tr><td style="text-align: left"><code>fixed-center</code></td><td style="text-align: left">将<code>position</code>设置为<code>fixed</code>，但在窗口中间。</td></tr>
+<tr><td style="text-align: left"><code>absolute</code></td><td style="text-align: left">将<code>position</code>设置为<code>absolute</code>而不指定<code>top</code>，<code>left</code>，<code>right</code>或<code>bottom</code>属性</td></tr>
+<tr><td style="text-align: left"><code>absolute-center</code></td><td style="text-align: left">将<code>position</code>设置为<code>absolute</code>，但在容器中间（容器需要相对位置）。</td></tr>
+<tr><td style="text-align: left"><code>fixed-top</code>，<code>absolute-top</code></td><td style="text-align: left">固定或绝对定位在屏幕顶部</td></tr>
+<tr><td style="text-align: left"><code>fixed-right</code>，<code>absolute-right</code></td><td style="text-align: left">固定或绝对定位在屏幕右边缘</td></tr>
+<tr><td style="text-align: left"><code>fixed-bottom</code>，<code>absolute-bottom</code></td><td style="text-align: left">固定或绝对定位在屏幕底部</td></tr>
+<tr><td style="text-align: left"><code>fixed-left</code>，<code>absolute-left</code></td><td style="text-align: left">固定或绝对定位在屏幕左边缘</td></tr>
+<tr><td style="text-align: left"><code>fixed-top-left</code>，<code>absolute-top-left</code></td><td style="text-align: left">固定或绝对定位在屏幕左上角</td></tr>
+<tr><td style="text-align: left"><code>fixed-top-right</code>，<code>absolute-top-right</code></td><td style="text-align: left">固定或绝对定位在屏幕右上角</td></tr>
+<tr><td style="text-align: left"><code>fixed-bottom-left</code>, <code>absolute-bottom-left</code></td><td style="text-align: left">固定或绝对定位在屏幕左下角</td></tr>
+<tr><td style="text-align: left"><code>fixed-bottom-right</code>, <code>absolute-bottom-right</code></td><td style="text-align: left">固定或绝对定位在屏幕右下角</td></tr>
+<tr><td style="text-align: left"><code>relative-position</code></td><td style="text-align: left">将<code>position</code>设置为<code>relative</code></td></tr>
+</tbody></table>
+<h2 id="对齐"><a class="header" href="#对齐">对齐</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>float-left</code></td><td style="text-align: left">浮动到左侧</td></tr>
+<tr><td style="text-align: left"><code>float-right</code></td><td style="text-align: left">浮动到右侧</td></tr>
+<tr><td style="text-align: left"><code>on-left</code></td><td style="text-align: left">在右侧设置一个小边距;通常用于有兄弟元素的图标元素</td></tr>
+<tr><td style="text-align: left"><code>on-right</code></td><td style="text-align: left">在左侧设置一个小边距;通常用于有兄弟元素的图标元素</td></tr>
+</tbody></table>
+<p>TIP</p>
+<p>我们建议您阅读Quasar网格系统而不要使用<code>float-left</code> 或 <code>float-right</code>。</p>
+<p>垂直对齐：</p>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>vertical-top</code></td><td style="text-align: left">将CSS垂直对齐设置为<code>top</code></td></tr>
+<tr><td style="text-align: left"><code>vertical-middle</code></td><td style="text-align: left">将CSS垂直对齐设置为<code>middle</code></td></tr>
+<tr><td style="text-align: left"><code>vertical-bottom</code></td><td style="text-align: left">将CSS垂直对齐设置为<code>bottom</code></td></tr>
+</tbody></table>
+<h1 id="sassscss变量"><a class="header" href="#sassscss变量"><a href="http://www.quasarchs.com/style/sass-scss-variables#Introduction">Sass/SCSS变量</a></a></h1>
+<h1 id="stylus变量"><a class="header" href="#stylus变量"><a href="http://www.quasarchs.com/style/stylus-variables#Introduction">Stylus变量</a></a></h1>
+<h1 id="其他css辅助类"><a class="header" href="#其他css辅助类">其他CSS辅助类</a></h1>
+<p>在编写Vue模板时可以使用很多CSS类。对减轻VueModels和模板的复杂性上非常有用。</p>
+<p>以下所列是不完整的。同时检查其他CSS文档页面，如排版、可见性、阴影、定位。</p>
+<h2 id="鼠标相关"><a class="header" href="#鼠标相关">鼠标相关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>non-selectable</code></td><td style="text-align: left">用户将无法选择DOM节点及其文本</td></tr>
+<tr><td style="text-align: left"><code>scroll</code></td><td style="text-align: left">应用CSS调整使所有平台上的滚动工作达到最佳状态</td></tr>
+<tr><td style="text-align: left"><code>no-scroll</code></td><td style="text-align: left">隐藏DOM节点上的滚动条</td></tr>
+<tr><td style="text-align: left"><code>no-pointer-events</code></td><td style="text-align: left">DOM元素不会成为鼠标事件的目标 - 点击、悬停等</td></tr>
+<tr><td style="text-align: left"><code>all-pointer-events</code></td><td style="text-align: left"><code>no-pointer-events</code>的反义词</td></tr>
+<tr><td style="text-align: left"><code>cursor-pointer</code></td><td style="text-align: left">改变DOM元素上的鼠标指针，看起来好像在可点击的链接上</td></tr>
+<tr><td style="text-align: left"><code>cursor-not-allowed</code></td><td style="text-align: left">更改DOM元素上的鼠标指针，使其看起来好像不会执行任何操作</td></tr>
+<tr><td style="text-align: left"><code>cursor-inherit</code></td><td style="text-align: left">将DOM元素上的鼠标指针更改为与父选项相同</td></tr>
+<tr><td style="text-align: left"><code>cursor-none</code></td><td style="text-align: left">没有鼠标光标被渲染</td></tr>
+</tbody></table>
+<h2 id="大小相关"><a class="header" href="#大小相关">大小相关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>fit</code></td><td style="text-align: left">宽度和高度设置为100％</td></tr>
+<tr><td style="text-align: left"><code>full-height</code></td><td style="text-align: left">高度设置为100％</td></tr>
+<tr><td style="text-align: left"><code>full-width</code></td><td style="text-align: left">宽度设置为100％</td></tr>
+<tr><td style="text-align: left"><code>window-height</code></td><td style="text-align: left">高度设置为100vh，顶部和底部边距为0</td></tr>
+<tr><td style="text-align: left"><code>window-width</code></td><td style="text-align: left">宽度设置为100vw，左边距和右边距0</td></tr>
+<tr><td style="text-align: left"><code>block</code></td><td style="text-align: left">将<code>display</code>属性设置为<code>block</code></td></tr>
+</tbody></table>
+<h2 id="方向有关"><a class="header" href="#方向有关">方向有关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>rotate-45</code></td><td style="text-align: left">旋转45度</td></tr>
+<tr><td style="text-align: left"><code>rotate-90</code></td><td style="text-align: left">旋转90度</td></tr>
+<tr><td style="text-align: left"><code>rotate-135</code></td><td style="text-align: left">旋转135度</td></tr>
+<tr><td style="text-align: left"><code>rotate-180</code></td><td style="text-align: left">旋转180度</td></tr>
+<tr><td style="text-align: left"><code>rotate-205</code></td><td style="text-align: left">旋转205度</td></tr>
+<tr><td style="text-align: left"><code>rotate-270</code></td><td style="text-align: left">旋转270度</td></tr>
+<tr><td style="text-align: left"><code>rotate-315</code></td><td style="text-align: left">旋转315度</td></tr>
+<tr><td style="text-align: left"><code>flip-horizontal</code></td><td style="text-align: left">水平翻转DOM元素</td></tr>
+<tr><td style="text-align: left"><code>flip-vertical</code></td><td style="text-align: left">垂直翻转DOM元素</td></tr>
+</tbody></table>
+<h2 id="边界相关"><a class="header" href="#边界相关">边界相关</a></h2>
+<table><thead><tr><th style="text-align: left">类名</th><th style="text-align: left">说明</th></tr></thead><tbody>
+<tr><td style="text-align: left"><code>no-border</code></td><td style="text-align: left">删除任何边框</td></tr>
+<tr><td style="text-align: left"><code>no-border-radius</code></td><td style="text-align: left">删除边框可能具有的任何半径</td></tr>
+<tr><td style="text-align: left"><code>rounded-borders</code></td><td style="text-align: left">应用通用边框半径</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../quasar/网格布局.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../quasar/组件/q-dialog.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../quasar/网格布局.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../quasar/组件/q-dialog.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
